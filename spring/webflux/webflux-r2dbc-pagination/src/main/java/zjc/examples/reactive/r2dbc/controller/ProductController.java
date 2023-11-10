@@ -1,7 +1,7 @@
-package com.vinsguru.reactive.r2dbc.controller;
+package zjc.examples.reactive.r2dbc.controller;
 
-import com.vinsguru.reactive.r2dbc.entity.Product;
-import com.vinsguru.reactive.r2dbc.service.ProductService;
+import zjc.examples.reactive.r2dbc.entity.Product;
+import zjc.examples.reactive.r2dbc.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

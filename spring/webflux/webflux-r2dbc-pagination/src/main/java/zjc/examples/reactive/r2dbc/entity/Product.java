@@ -1,4 +1,4 @@
-package com.vinsguru.reactive.r2dbc.entity;
+package zjc.examples.reactive.r2dbc.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
