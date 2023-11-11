@@ -6,5 +6,6 @@ We will build a Spring WebFlux R2DBC example that makes CRUD Operations with Pos
 - Organization APIs help to create, retrieve, update, delete Organizations.
 - Organization APIs also support custom finder methods such as find by status or by title.
 ### Run
+- DELETE FROM organization
 - mvn spring-boot:run
 - http://localhost:8080/api/organizations

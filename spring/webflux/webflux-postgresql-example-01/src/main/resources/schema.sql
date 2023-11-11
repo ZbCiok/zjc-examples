@@ -1,2 +1,2 @@
 CREATE TABLE IF NOT EXISTS organization (id SERIAL PRIMARY KEY, name VARCHAR(255), description VARCHAR(255), status BOOLEAN);
-insert into organization(id, name, description, status) values(1, 'org#name#1', 'descr#1', 'true');
+-- insert into organization(id, name, description, status) values(1, 'org#name#1', 'descr#1', 'true');
