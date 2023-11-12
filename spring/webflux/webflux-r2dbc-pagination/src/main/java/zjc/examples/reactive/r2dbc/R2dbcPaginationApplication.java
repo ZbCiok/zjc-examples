@@ -1,6 +1,5 @@
 package zjc.examples.reactive.r2dbc;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
@@ -15,7 +14,6 @@ import zjc.examples.reactive.r2dbc.entity.Product;
 
 import java.nio.charset.StandardCharsets;
 import java.util.concurrent.ThreadLocalRandom;
-
 
 @SpringBootApplication
 public class R2dbcPaginationApplication  implements CommandLineRunner {
