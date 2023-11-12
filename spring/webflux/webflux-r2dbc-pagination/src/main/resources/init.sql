@@ -1,6 +1,4 @@
-create table product (
-    id bigint auto_increment,
-    description varchar(50),
-    price int,
-    primary key (id)
-);
+
+DROP TABLE IF EXISTS product;
+CREATE TABLE IF NOT EXISTS product (id SERIAL PRIMARY KEY, description VARCHAR(255), price int);
+
