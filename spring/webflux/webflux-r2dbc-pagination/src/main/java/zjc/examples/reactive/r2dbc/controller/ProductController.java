@@ -18,8 +18,8 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @GetMapping("page")
-    public Mono<Page<Product>> getAll(@RequestParam("page") int page, @RequestParam("size") int size){
+    @GetMapping("getPage")
+    public Mono<Page<Product>> getPage(@RequestParam("page") int page, @RequestParam("size") int size){
         return this.productService.getProducts(PageRequest.of(page, size));
     }
 
