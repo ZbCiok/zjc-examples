@@ -17,7 +17,7 @@ public class ProductService {
     private ProductRepository repository;
 
     public Mono<Page<Product>> getProducts(PageRequest pageRequest){
-        return this.repository.findAllBy(pageRequest.withSort(Sort.by("price").descending()))
+        return this.repository.findAllBy(pageRequest.withSort(Sort.by("price").ascending()))
                         .collectList()
                         .zipWith(this.repository.count())
                         .map(t -> new PageImpl<>(t.getT1(), pageRequest, t.getT2()));

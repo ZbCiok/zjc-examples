@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring/webflux/webflux-r2dbc-pagination/src/main/java/zjc/examples/reactive/r2dbc/R2dbcPaginationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/webflux/webflux-r2dbc-pagination/src/main/java/zjc/examples/reactive/r2dbc/R2dbcPaginationApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
       <workItem from="1699792439340" duration="167000" />
       <workItem from="1699792608201" duration="70000" />
       <workItem from="1699792689490" duration="654000" />
-      <workItem from="1699796343470" duration="2565000" />
+      <workItem from="1699796343470" duration="3508000" />
     </task>
     <task id="LOCAL-00001" summary="README.md">
       <option name="closed" value="true" />
@@ -253,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699796928122</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="corrections">
+      <option name="closed" value="true" />
+      <created>1699799958295</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1699799958295</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +270,7 @@
     <MESSAGE value="README.md" />
     <MESSAGE value="correction" />
     <MESSAGE value="setup postgresql" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup postgresql" />
+    <MESSAGE value="corrections" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrections" />
   </component>
 </project>

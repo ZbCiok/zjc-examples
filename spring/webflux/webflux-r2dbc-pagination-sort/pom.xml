@@ -10,10 +10,10 @@
     </parent>
 
     <groupId>zjc.examples</groupId>
-    <artifactId>webflux-r2dbc-pagination</artifactId>
+    <artifactId>webflux-r2dbc-pagination-sort</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>webflux-r2dbc-pagination</name>
-    <description>webflux-r2dbc-pagination</description>
+    <name>webflux-r2dbc-pagination-sort</name>
+    <description>webflux-r2dbc-pagination-sort</description>
 
     <properties>
         <java.version>17</java.version>
