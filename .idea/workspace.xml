@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/src/main/java/org/hibernate/reactive/example/nativesql/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/src/main/java/org/hibernate/reactive/example/nativesql/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/src/main/java/org/hibernate/reactive/example/nativesql/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/src/main/java/org/hibernate/reactive/example/nativesql/MutinyMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/src/main/resources/META-INF/create.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/src/main/resources/META-INF/drop.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/src/main/resources/log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-data-TODO/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-data-TODO/src/main/java/zjc/examples/hibernateReactive/data01/HibernateRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/hibernate-reactive-data/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/hibernate-reactive-data/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-data-TODO/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/hibernate-reactive-data/src/main/java/zjc/examples/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-data-TODO/src/main/java/zjc/examples/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/hibernate-reactive-data/src/main/java/zjc/examples/hibernateReactive/data01/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-data-TODO/src/main/java/zjc/examples/hibernateReactive/data01/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/hibernate-reactive-data/src/main/java/zjc/examples/hibernateReactive/data01/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-data-TODO/src/main/java/zjc/examples/hibernateReactive/data01/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/hibernate-reactive-data/src/main/resources/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-data-TODO/src/main/resources/init.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/src/main/java/org/hibernate/reactive/example/nativesql/MutinyMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-example/src/main/java/org/hibernate/reactive/example/nativesql/MutinyMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +34,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/hibernate",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -110,6 +91,7 @@
       <workItem from="1699891318054" duration="1727000" />
       <workItem from="1699960472721" duration="173000" />
       <workItem from="1700138080971" duration="258000" />
+      <workItem from="1700138445513" duration="2315000" />
     </task>
     <task id="LOCAL-00001" summary="README.md">
       <option name="closed" value="true" />
@@ -303,7 +285,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699900844274</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="CompletionStage 01">
+      <option name="closed" value="true" />
+      <created>1700138556974</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1700138556974</updated>
+    </task>
+    <task id="LOCAL-00026" summary="CompletionStage 02">
+      <option name="closed" value="true" />
+      <created>1700153025742</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1700153025742</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +313,8 @@
     <MESSAGE value="setup postgresql" />
     <MESSAGE value="corrections" />
     <MESSAGE value="hibernate" />
-    <option name="LAST_COMMIT_MESSAGE" value="hibernate" />
+    <MESSAGE value="CompletionStage 01" />
+    <MESSAGE value="CompletionStage 02" />
+    <option name="LAST_COMMIT_MESSAGE" value="CompletionStage 02" />
   </component>
 </project>
