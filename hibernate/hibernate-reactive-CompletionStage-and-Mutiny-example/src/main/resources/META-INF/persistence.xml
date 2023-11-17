@@ -6,8 +6,8 @@
 <persistence-unit name="postgresql-example">
         <provider>org.hibernate.reactive.provider.ReactivePersistenceProvider</provider>
 
-        <class>org.hibernate.reactive.example.nativesql.Author</class>
-        <class>org.hibernate.reactive.example.nativesql.Book</class>
+        <class>zjc.examples.hibernate.reactive.session.Author</class>
+        <class>zjc.examples.hibernate.reactive.session.Book</class>
 
         <properties>
 
