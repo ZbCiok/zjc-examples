@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-and-Mutiny-example/src/main/java/org/hibernate/reactive/example/nativesql/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-and-Mutiny-example/src/main/java/zjc/examples/hibernate/reactive/session/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-and-Mutiny-example/src/main/java/org/hibernate/reactive/example/nativesql/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-and-Mutiny-example/src/main/java/zjc/examples/hibernate/reactive/session/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-and-Mutiny-example/src/main/java/org/hibernate/reactive/example/nativesql/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-and-Mutiny-example/src/main/java/zjc/examples/hibernate/reactive/session/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-and-Mutiny-example/src/main/java/org/hibernate/reactive/example/nativesql/MutinyMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-and-Mutiny-example/src/main/java/zjc/examples/hibernate/reactive/session/MutinyMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-and-Mutiny-example/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hibernate/hibernate-reactive-CompletionStage-and-Mutiny-example/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +91,7 @@
       <workItem from="1699960472721" duration="173000" />
       <workItem from="1700138080971" duration="258000" />
       <workItem from="1700138445513" duration="5098000" />
-      <workItem from="1700231114750" duration="1368000" />
+      <workItem from="1700231114750" duration="2014000" />
     </task>
     <task id="LOCAL-00001" summary="README.md">
       <option name="closed" value="true" />
@@ -330,7 +325,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700231897660</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Corrections 03">
+      <option name="closed" value="true" />
+      <created>1700232507001</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1700232507001</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,6 +350,7 @@
     <MESSAGE value="Mutiny" />
     <MESSAGE value="Corrections" />
     <MESSAGE value="Corrections 02" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrections 02" />
+    <MESSAGE value="Corrections 03" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrections 03" />
   </component>
 </project>
