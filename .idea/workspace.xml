@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-01/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-01/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-01/src/main/java/zjc/examples/vertx/verticle/SampleVerticle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,11 +37,12 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/hibernate/hibernate-reactive-CompletionStage-and-Mutiny-example",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/verticle",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.10141988",
@@ -47,9 +52,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vertx/verticle" />
       <recent name="$PROJECT_DIR$/hibernate" />
       <recent name="$PROJECT_DIR$/spring/webflux" />
       <recent name="$PROJECT_DIR$/spring/webflux/webflux-r2dbc-pagination" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example01/src/main/java/zjc/examples/vertx.verticle" />
     </key>
   </component>
   <component name="RunManager">
@@ -92,6 +101,9 @@
       <workItem from="1700138080971" duration="258000" />
       <workItem from="1700138445513" duration="5098000" />
       <workItem from="1700231114750" duration="2014000" />
+      <workItem from="1700510321923" duration="660000" />
+      <workItem from="1700565120459" duration="1491000" />
+      <workItem from="1700589007243" duration="1562000" />
     </task>
     <task id="LOCAL-00001" summary="README.md">
       <option name="closed" value="true" />
@@ -333,7 +345,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700232507001</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="vertx 01">
+      <option name="closed" value="true" />
+      <created>1700510388339</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1700510388339</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,6 +371,7 @@
     <MESSAGE value="Corrections" />
     <MESSAGE value="Corrections 02" />
     <MESSAGE value="Corrections 03" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrections 03" />
+    <MESSAGE value="vertx 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="vertx 01" />
   </component>
 </project>
