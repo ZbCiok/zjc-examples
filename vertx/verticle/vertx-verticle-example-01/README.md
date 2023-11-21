@@ -1,4 +1,4 @@
-# vetx-verticle-example-01
+# vertx-verticle-example-01
 
 #### Building and running the code
 
