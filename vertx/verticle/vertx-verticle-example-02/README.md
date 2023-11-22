@@ -1,4 +1,4 @@
-# vertx-verticle-example-01
+# vertx-verticle-example-02
 
 ### Building and running the code:
 
