@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-01/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-01/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-01/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-01/src/main/java/zjc/examples/vertx/verticle/SampleVerticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-02/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-02/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-02/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-02/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-02/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-02/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-02/src/main/java/zjc/examples/vertx/verticle/HelloVerticle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +41,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/verticle",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/verticle/vertx-verticle-example-02",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,6 +56,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-02" />
       <recent name="$PROJECT_DIR$/vertx/verticle" />
       <recent name="$PROJECT_DIR$/hibernate" />
       <recent name="$PROJECT_DIR$/spring/webflux" />
@@ -103,7 +108,8 @@
       <workItem from="1700231114750" duration="2014000" />
       <workItem from="1700510321923" duration="660000" />
       <workItem from="1700565120459" duration="1491000" />
-      <workItem from="1700589007243" duration="1562000" />
+      <workItem from="1700589007243" duration="4386000" />
+      <workItem from="1700679474663" duration="748000" />
     </task>
     <task id="LOCAL-00001" summary="README.md">
       <option name="closed" value="true" />
@@ -353,7 +359,31 @@
       <option name="project" value="LOCAL" />
       <updated>1700510388339</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="verticle 01">
+      <option name="closed" value="true" />
+      <created>1700590626230</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1700590626230</updated>
+    </task>
+    <task id="LOCAL-00033" summary="verticle 02">
+      <option name="closed" value="true" />
+      <created>1700590804733</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1700590804733</updated>
+    </task>
+    <task id="LOCAL-00034" summary="verticle 03">
+      <option name="closed" value="true" />
+      <created>1700591289264</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1700591289264</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -372,6 +402,9 @@
     <MESSAGE value="Corrections 02" />
     <MESSAGE value="Corrections 03" />
     <MESSAGE value="vertx 01" />
-    <option name="LAST_COMMIT_MESSAGE" value="vertx 01" />
+    <MESSAGE value="verticle 01" />
+    <MESSAGE value="verticle 02" />
+    <MESSAGE value="verticle 03" />
+    <option name="LAST_COMMIT_MESSAGE" value="verticle 03" />
   </component>
 </project>
