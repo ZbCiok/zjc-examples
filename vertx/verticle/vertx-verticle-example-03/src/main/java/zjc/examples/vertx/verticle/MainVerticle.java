@@ -16,6 +16,8 @@ public class MainVerticle extends AbstractVerticle {
     public void start(Promise<Void> promise) {
         final Router router = Router.router(vertx);
         buildHttpServer(vertx, promise, router);
+
+        System.out.println("MainVerticle started");
     }
 
     private void buildHttpServer(Vertx vertx,
