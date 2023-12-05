@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-example-01/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-example-01/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-example-01/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-example-01/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-example-01/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-example-01/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-example-01/src/main/java/zjc/examples/vertx/eventbus/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-example-01/src/main/java/zjc/examples/vertx/eventbus/ReceiverVerticle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-example-01/src/main/java/zjc/examples/vertx/eventbus/SenderVerticle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-example-01/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-pub-sub/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-pub-sub/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-pub-sub/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-pub-sub/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-pub-sub/src/main/java/zjc/examples/vertx/eventBus/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-pub-sub/src/main/java/zjc/examples/vertx/eventBus/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-pub-sub/src/main/java/zjc/examples/vertx/eventBus/Sender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,11 +55,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vertx/eventBus" />
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-03" />
       <recent name="$PROJECT_DIR$/vertx/verticle" />
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-02" />
       <recent name="$PROJECT_DIR$/hibernate" />
-      <recent name="$PROJECT_DIR$/spring/webflux" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example01/src/main/java/zjc/examples/vertx.verticle" />
@@ -115,7 +112,10 @@
       <workItem from="1700725100357" duration="7000" />
       <workItem from="1700738989253" duration="645000" />
       <workItem from="1700741607440" duration="2731000" />
-      <workItem from="1700821789853" duration="7091000" />
+      <workItem from="1700821789853" duration="7232000" />
+      <workItem from="1700837089570" duration="91000" />
+      <workItem from="1701805225210" duration="678000" />
+      <workItem from="1701805913699" duration="2384000" />
     </task>
     <task id="LOCAL-00001" summary="README.md">
       <option name="closed" value="true" />
@@ -429,7 +429,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700822689814</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="event bus 01">
+      <option name="closed" value="true" />
+      <created>1700836912509</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1700836912509</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,6 +463,7 @@
     <MESSAGE value="verticle-example03 01" />
     <MESSAGE value="verticle-example 03 02" />
     <MESSAGE value="corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrections" />
+    <MESSAGE value="event bus 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="event bus 01" />
   </component>
 </project>
