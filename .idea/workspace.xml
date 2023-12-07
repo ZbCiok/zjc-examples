@@ -31,7 +31,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/eventBus",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/eventBus/vertx-event-bus-pub-sub",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,11 +46,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-pub-sub" />
       <recent name="$PROJECT_DIR$/vertx/eventBus" />
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-03" />
       <recent name="$PROJECT_DIR$/vertx/verticle" />
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-02" />
-      <recent name="$PROJECT_DIR$/hibernate" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example01/src/main/java/zjc/examples/vertx.verticle" />
@@ -107,6 +107,7 @@
       <workItem from="1700837089570" duration="91000" />
       <workItem from="1701805225210" duration="678000" />
       <workItem from="1701805913699" duration="2756000" />
+      <workItem from="1701868814749" duration="842000" />
     </task>
     <task id="LOCAL-00001" summary="README.md">
       <option name="closed" value="true" />
@@ -436,14 +437,21 @@
       <option name="project" value="LOCAL" />
       <updated>1701809740354</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="README.md">
+      <option name="closed" value="true" />
+      <created>1701869041536</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1701869041536</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="README.md" />
     <MESSAGE value="correction" />
     <MESSAGE value="setup postgresql" />
     <MESSAGE value="hibernate" />
@@ -464,6 +472,7 @@
     <MESSAGE value="corrections" />
     <MESSAGE value="event bus 01" />
     <MESSAGE value="event-bus-pub-sub" />
-    <option name="LAST_COMMIT_MESSAGE" value="event-bus-pub-sub" />
+    <MESSAGE value="README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
   </component>
 </project>
