@@ -1,4 +1,4 @@
-= Starter
+= Starter / deploying-verticle
 
 image:https://img.shields.io/badge/vert.x-4.5.0-purple.svg[link="https://vertx.io"]
 
