@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="" />
+    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertx/packaging/packaging-shade-plugin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/packaging/packaging-shade-plugin/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +34,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/eventBus/vertx-event-bus-pub-sub",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/packaging",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,11 +49,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vertx/packaging" />
+      <recent name="$PROJECT_DIR$/vertx/verticle" />
       <recent name="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-pub-sub" />
       <recent name="$PROJECT_DIR$/vertx/eventBus" />
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-03" />
-      <recent name="$PROJECT_DIR$/vertx/verticle" />
-      <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-02" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example01/src/main/java/zjc/examples/vertx.verticle" />
@@ -108,6 +111,9 @@
       <workItem from="1701805225210" duration="678000" />
       <workItem from="1701805913699" duration="2756000" />
       <workItem from="1701868814749" duration="842000" />
+      <workItem from="1701956627734" duration="1403000" />
+      <workItem from="1701978837966" duration="27000" />
+      <workItem from="1702122570262" duration="1143000" />
     </task>
     <task id="LOCAL-00001" summary="README.md">
       <option name="closed" value="true" />
@@ -445,7 +451,31 @@
       <option name="project" value="LOCAL" />
       <updated>1701869041536</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="deploying-verticle">
+      <option name="closed" value="true" />
+      <created>1701956858982</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1701956858982</updated>
+    </task>
+    <task id="LOCAL-00044" summary="deploying-verticle 02">
+      <option name="closed" value="true" />
+      <created>1701957172351</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1701957172351</updated>
+    </task>
+    <task id="LOCAL-00045" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1702122809858</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1702122809858</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,6 +503,10 @@
     <MESSAGE value="event bus 01" />
     <MESSAGE value="event-bus-pub-sub" />
     <MESSAGE value="README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
+    <MESSAGE value="deploy" />
+    <MESSAGE value="deploying-verticle" />
+    <MESSAGE value="deploying-verticle 02" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
