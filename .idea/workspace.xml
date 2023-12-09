@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/src/main/java/com/example/MyApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertx/packaging/packaging-shade-plugin/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/packaging/packaging-shade-plugin/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +120,7 @@
       <workItem from="1701868814749" duration="842000" />
       <workItem from="1701956627734" duration="1403000" />
       <workItem from="1701978837966" duration="27000" />
-      <workItem from="1702122570262" duration="1143000" />
+      <workItem from="1702122570262" duration="3634000" />
     </task>
     <task id="LOCAL-00001" summary="README.md">
       <option name="closed" value="true" />
@@ -475,15 +482,29 @@
       <option name="project" value="LOCAL" />
       <updated>1702122809858</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="readme.md">
+      <option name="closed" value="true" />
+      <created>1702123729811</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1702123729811</updated>
+    </task>
+    <task id="LOCAL-00047" summary="readme.md 2">
+      <option name="closed" value="true" />
+      <created>1702124074034</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1702124074034</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="correction" />
-    <MESSAGE value="setup postgresql" />
     <MESSAGE value="hibernate" />
     <MESSAGE value="CompletionStage 01" />
     <MESSAGE value="CompletionStage 02" />
@@ -507,6 +528,8 @@
     <MESSAGE value="deploying-verticle" />
     <MESSAGE value="deploying-verticle 02" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="readme.md" />
+    <MESSAGE value="readme.md 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme.md 2" />
   </component>
 </project>
