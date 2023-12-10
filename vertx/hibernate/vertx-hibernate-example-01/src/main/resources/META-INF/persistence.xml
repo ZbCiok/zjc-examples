@@ -6,7 +6,7 @@
   <persistence-unit name="pg-demo">
     <provider>org.hibernate.reactive.provider.ReactivePersistenceProvider</provider>  <!--1-->
 
-    <class>io.vertx.howtos.hr.Product</class> <!--2-->
+    <class>zjc.examples.vertx.hibernate.Product</class> <!--2-->
 
     <properties>
 

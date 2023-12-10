@@ -1,4 +1,4 @@
-package io.vertx.howtos.hr;
+package zjc.examples.vertx.hibernate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

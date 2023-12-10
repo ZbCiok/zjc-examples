@@ -10,7 +10,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <main.verticle>io.vertx.howtos.hr.MainVerticle</main.verticle>
+    <main.verticle>zjc.examples.vertx.hibernate.MainVerticle</main.verticle>
   </properties>
 
   <dependencyManagement>

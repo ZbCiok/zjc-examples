@@ -155,18 +155,18 @@ The logs should be similar to:
 [source,text]
 ----
 [INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ hibernate-reactive-howto ---
-2021-05-18 13:54:35,570 INFO [io.vertx.howtos.hr.MainVerticle.main()] io.vertx.howtos.hr.MainVerticle - 🚀 Starting a PostgreSQL container
-2021-05-18 13:54:39,430 DEBUG [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Starting container: postgres:11-alpine
-2021-05-18 13:54:39,431 DEBUG [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Trying to start container: postgres:11-alpine (attempt 1/1)
-2021-05-18 13:54:39,432 DEBUG [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Starting container: postgres:11-alpine
-2021-05-18 13:54:39,432 INFO [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Creating container for image: postgres:11-alpine
-2021-05-18 13:54:40,016 INFO [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Starting container with ID: f538f59149d72ebec87382b09624240ca2faddcbc9c247a53575a537d1d7f045
-2021-05-18 13:54:42,050 INFO [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Container postgres:11-alpine is starting: f538f59149d72ebec87382b09624240ca2faddcbc9c247a53575a537d1d7f045
-2021-05-18 13:54:43,918 INFO [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Container postgres:11-alpine started in PT4.510869S
-2021-05-18 13:54:43,918 INFO [io.vertx.howtos.hr.MainVerticle.main()] io.vertx.howtos.hr.MainVerticle - 🚀 Starting Vert.x
+2021-05-18 13:54:35,570 INFO [zjc.examples.vertx.hibernate.MainVerticle.main()] zjc.examples.vertx.hibernate.MainVerticle - 🚀 Starting a PostgreSQL container
+2021-05-18 13:54:39,430 DEBUG [zjc.examples.vertx.hibernate.MainVerticle.main()] 🐳 [postgres:11-alpine] - Starting container: postgres:11-alpine
+2021-05-18 13:54:39,431 DEBUG [zjc.examples.vertx.hibernate.MainVerticle.main()] 🐳 [postgres:11-alpine] - Trying to start container: postgres:11-alpine (attempt 1/1)
+2021-05-18 13:54:39,432 DEBUG [zjc.examples.vertx.hibernate.MainVerticle.main()] 🐳 [postgres:11-alpine] - Starting container: postgres:11-alpine
+2021-05-18 13:54:39,432 INFO [zjc.examples.vertx.hibernate.MainVerticle.main()] 🐳 [postgres:11-alpine] - Creating container for image: postgres:11-alpine
+2021-05-18 13:54:40,016 INFO [zjc.examples.vertx.hibernate.MainVerticle.main()] 🐳 [postgres:11-alpine] - Starting container with ID: f538f59149d72ebec87382b09624240ca2faddcbc9c247a53575a537d1d7f045
+2021-05-18 13:54:42,050 INFO [zjc.examples.vertx.hibernate.MainVerticle.main()] 🐳 [postgres:11-alpine] - Container postgres:11-alpine is starting: f538f59149d72ebec87382b09624240ca2faddcbc9c247a53575a537d1d7f045
+2021-05-18 13:54:43,918 INFO [zjc.examples.vertx.hibernate.MainVerticle.main()] 🐳 [postgres:11-alpine] - Container postgres:11-alpine started in PT4.510869S
+2021-05-18 13:54:43,918 INFO [zjc.examples.vertx.hibernate.MainVerticle.main()] zjc.examples.vertx.hibernate.MainVerticle - 🚀 Starting Vert.x
 2021-05-18 13:54:44,342 INFO [vert.x-worker-thread-0] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: pg-demo]
 2021-05-18 13:54:44,408 INFO [vert.x-worker-thread-0] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.31.Final
-2021-05-18 13:54:44,581 INFO [vert.x-eventloop-thread-0] io.vertx.howtos.hr.MainVerticle - ✅ HTTP server listening on port 8080
+2021-05-18 13:54:44,581 INFO [vert.x-eventloop-thread-0] zjc.examples.vertx.hibernate.MainVerticle - ✅ HTTP server listening on port 8080
 2021-05-18 13:54:44,586 INFO [vert.x-worker-thread-0] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
 2021-05-18 13:54:44,775 INFO [vert.x-worker-thread-0] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
 2021-05-18 13:54:45,006 INFO [vert.x-worker-thread-0] o.h.reactive.provider.impl.ReactiveIntegrator - HRX000001: Hibernate Reactive Preview
@@ -197,10 +197,10 @@ The logs should be similar to:
 [Hibernate]
     alter table if exists Product
        add constraint UK_gxubutkbk5o2a6aakbe7q9kww unique (name)
-2021-05-18 13:54:45,574 INFO [vert.x-eventloop-thread-0] io.vertx.howtos.hr.MainVerticle - ✅ Hibernate Reactive is ready
-2021-05-18 13:54:45,576 INFO [vert.x-eventloop-thread-1] io.vertx.howtos.hr.MainVerticle - ✅ Deployment success
-2021-05-18 13:54:45,576 INFO [vert.x-eventloop-thread-1] io.vertx.howtos.hr.MainVerticle - 💡 PostgreSQL container started in 8349ms
-2021-05-18 13:54:45,576 INFO [vert.x-eventloop-thread-1] io.vertx.howtos.hr.MainVerticle - 💡 Vert.x app started in 1658ms
+2021-05-18 13:54:45,574 INFO [vert.x-eventloop-thread-0] zjc.examples.vertx.hibernate.MainVerticle - ✅ Hibernate Reactive is ready
+2021-05-18 13:54:45,576 INFO [vert.x-eventloop-thread-1] zjc.examples.vertx.hibernate.MainVerticle - ✅ Deployment success
+2021-05-18 13:54:45,576 INFO [vert.x-eventloop-thread-1] zjc.examples.vertx.hibernate.MainVerticle - 💡 PostgreSQL container started in 8349ms
+2021-05-18 13:54:45,576 INFO [vert.x-eventloop-thread-1] zjc.examples.vertx.hibernate.MainVerticle - 💡 Vert.x app started in 1658ms
 ----
 
 We can insert products:

@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/.github/workflows/publish.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/README.adoc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/java/io/vertx/howtos/hr/MainVerticle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/java/io/vertx/howtos/hr/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/README.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/README.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/java/io/vertx/howtos/hr/MainVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/java/zjc/examples/vertx/hibernate/MainVerticle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/java/io/vertx/howtos/hr/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/java/zjc/examples/vertx/hibernate/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +38,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/hibernate",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/hibernate/vertx-hibernate-example-01",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,11 +53,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vertx/hibernate" />
       <recent name="$PROJECT_DIR$/vertx/packaging" />
       <recent name="$PROJECT_DIR$/vertx/verticle" />
       <recent name="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-pub-sub" />
       <recent name="$PROJECT_DIR$/vertx/eventBus" />
-      <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example-03" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example01/src/main/java/zjc/examples/vertx.verticle" />
@@ -121,15 +118,8 @@
       <workItem from="1701956627734" duration="1403000" />
       <workItem from="1701978837966" duration="27000" />
       <workItem from="1702122570262" duration="4514000" />
-      <workItem from="1702208763366" duration="1722000" />
-    </task>
-    <task id="LOCAL-00001" summary="README.md">
-      <option name="closed" value="true" />
-      <created>1699632467954</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1699632467954</updated>
+      <workItem from="1702208763366" duration="2120000" />
+      <workItem from="1702224586364" duration="433000" />
     </task>
     <task id="LOCAL-00002" summary="README.md">
       <option name="closed" value="true" />
@@ -507,7 +497,23 @@
       <option name="project" value="LOCAL" />
       <updated>1702135921357</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1702224130448</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1702224130448</updated>
+    </task>
+    <task id="LOCAL-00050" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1702224407788</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1702224407788</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
