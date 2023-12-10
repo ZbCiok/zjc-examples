@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vertx/packaging/vertx-maven-plugin/src/main/java/com/example/MyApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/.github/workflows/publish.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/README.adoc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/java/io/vertx/howtos/hr/MainVerticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/java/io/vertx/howtos/hr/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +41,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/packaging",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/hibernate",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -120,7 +120,8 @@
       <workItem from="1701868814749" duration="842000" />
       <workItem from="1701956627734" duration="1403000" />
       <workItem from="1701978837966" duration="27000" />
-      <workItem from="1702122570262" duration="3634000" />
+      <workItem from="1702122570262" duration="4514000" />
+      <workItem from="1702208763366" duration="1722000" />
     </task>
     <task id="LOCAL-00001" summary="README.md">
       <option name="closed" value="true" />
@@ -498,7 +499,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702124074034</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1702135921357</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1702135921357</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,9 +536,9 @@
     <MESSAGE value="deploy" />
     <MESSAGE value="deploying-verticle" />
     <MESSAGE value="deploying-verticle 02" />
-    <MESSAGE value="first commit" />
     <MESSAGE value="readme.md" />
     <MESSAGE value="readme.md 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme.md 2" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>

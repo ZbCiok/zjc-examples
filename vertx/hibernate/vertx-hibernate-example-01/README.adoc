@@ -1,0 +1,296 @@
+= Vert.x and Hibernate Reactive How-to
+:page-permalink: /
+:page-github: vertx-howtos/hibernate-reactive-howto
+
+ifdef::env-github[]
+image:https://github.com/vertx-howtos/hibernate-reactive-howto/workflows/Publish%20the%20how-to/badge.svg["Build Status", link="https://github.com/vertx-howtos/hibernate-reactive-howto/actions?query=workflow%3A%22Publish+the+how-to%22"]
+endif::env-github[]
+
+This how-to shows how to build a Vert.x service with http://hibernate.org/reactive/[Hibernate Reactive].
+
+== What you will build
+
+- You will build a HTTP service that can list, fetch and record products.
+- Database access will be made using the http://hibernate.org/reactive/[Hibernate Reactive APIs] and a https://vertx.io/docs/vertx-pg-client/java/[Reactive Vert.x SQL Client].
+- To simplify the experience the database will be started as a PostgreSQL container with https://www.testcontainers.org[TestContainers].
+
+== What you need
+
+- A text editor or IDE
+- Java 11 or higher
+- Apache Maven
+- Docker
+- HTTPie to make HTTP requests from the command-line
+
+== Create a project
+
+Here is the content of the pom.xml file that you should be using:
+
+[source,xml,role="collapsed"]
+.`pom.xml`
+----
+include::pom.xml[]
+----
+
+The project uses https://github.com/smallrye/smallrye-reactive-utils[the Vert.x Mutiny bindings], so you will use https://smallrye.io/smallrye-mutiny/[Mutiny] to compose asynchronous operations.
+
+== Service implementation
+
+The service fits in 2 classes:
+
+. `MainVerticle` contains the `main` method as well as the sole verticle, and
+. `Product` is an entity to be managed with Hibernate.
+
+=== Product entity
+
+Let's start with the `Product` entity.
+A _product_ has a primary key, a name and a price:
+
+[source,java]
+----
+include::src/main/java/io/vertx/howtos/hr/Product.java[]
+----
+
+=== Hibernate Reactive configuration
+
+The configuration of _Hibernate Reactive_ is not very different from _regular Hibernate_.
+
+We need a `META-INF/persistence.xml` file as:
+
+[source,xml]
+----
+include::src/main/resources/META-INF/persistence.xml[]
+----
+<1> Specify the reactive provider
+<2> Make sure `Product` will be a managed entity
+<3> This is a JDBC-style URL, but be assured that it won't use JDBC!
+
+Hibernate Reactive selects the Vert.x reactive PostgreSQL driver because the `persistence.xml` file uses a PostgreSQL URL, and because `io.smallrye.reactive:smallrye-mutiny-vertx-pg-client` brings the driver implementation on the classpath.
+
+=== Application startup
+
+First of all, we start a PostgreSQL container with TestContainers in the `main` method, as in:
+
+[source,java]
+----
+include::src/main/java/io/vertx/howtos/hr/MainVerticle.java[tags=tc-start,indent=0]
+----
+
+Once the container is available, we can create a `Vertx` context and deploy `MainVerticle`:
+
+[source,java]
+----
+include::src/main/java/io/vertx/howtos/hr/MainVerticle.java[tags=vertx-start,indent=0]
+----
+<1> We need to pass the PostgreSQL port that is mapped outside the container
+<2> Because we are using Mutiny, we need to subscribe to the deployment operation and actually trigger it, otherwise nothing happens
+
+=== Verticle setup
+
+The verticle in class `MainVerticle` uses the Mutiny bindings, so there is a Mutiny-friendly method to define the start behavior.
+This method call `asyncStart` returns a `Uni<Void>`:
+
+[source,java]
+----
+include::src/main/java/io/vertx/howtos/hr/MainVerticle.java[tags=preamble,indent=0]
+----
+<1> This is the Hibernate Reactive session factory with a Mutiny-based API
+
+The `asyncStart` method needs to complete 2 operations:
+
+1. create an Hibernate Reactive session factory connected to the PostgreSQL database, and
+2. start a HTTP server.
+
+We can do these operations simultaneously rather than in sequence.
+
+The session factory is created using the following code, where we override the "JDBC" URL with the PostgreSQL port since it it dynamically allocated.
+Also note that creating session factory is a blocking operation, so we offload it to a work thread.
+
+[source,java]
+----
+include::src/main/java/io/vertx/howtos/hr/MainVerticle.java[tags=hr-start,indent=0]
+----
+<1> Override the PostgreSQL port
+<2> Offload to a worker thread
+
+The HTTP API is defined using 3 routes: 1 to get all products, 1 to get a specific product, and 1 to create / record a new product:
+
+[source,java]
+----
+include::src/main/java/io/vertx/howtos/hr/MainVerticle.java[tags=routing,indent=0]
+----
+
+We can finally start the HTTP server then await for Hibernate Reactive to be ready:
+
+[source,java]
+----
+include::src/main/java/io/vertx/howtos/hr/MainVerticle.java[tags=async-start,indent=0]
+----
+<1> Join the 2 asynchronous operations, then discard the values and return a `Void` value, hence `Uni<Void>`
+
+Once the 2 operations have completed then the `asyncStart` method reports that the verticle deployment has completed.
+
+=== Request handling methods
+
+The methods to handle HTTP requests use Hibernate Reactive for database access:
+
+[source,java]
+----
+include::src/main/java/io/vertx/howtos/hr/MainVerticle.java[tags=crud-methods,indent=0]
+----
+These are standard Hibernate operations (e.g., `persist`, `flush`, `find`) chained using Mutiny operators (e.g., `chain`, `onItem`, `replaceWith`).
+
+== Running the application
+
+The application is self-contained as it starts a PostgreSQL container.
+You can use Maven to compile and run the application:
+
+[source,text]
+----
+$ mvn compile exec:java
+----
+
+The logs should be similar to:
+
+[source,text]
+----
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ hibernate-reactive-howto ---
+2021-05-18 13:54:35,570 INFO [io.vertx.howtos.hr.MainVerticle.main()] io.vertx.howtos.hr.MainVerticle - 🚀 Starting a PostgreSQL container
+2021-05-18 13:54:39,430 DEBUG [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Starting container: postgres:11-alpine
+2021-05-18 13:54:39,431 DEBUG [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Trying to start container: postgres:11-alpine (attempt 1/1)
+2021-05-18 13:54:39,432 DEBUG [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Starting container: postgres:11-alpine
+2021-05-18 13:54:39,432 INFO [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Creating container for image: postgres:11-alpine
+2021-05-18 13:54:40,016 INFO [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Starting container with ID: f538f59149d72ebec87382b09624240ca2faddcbc9c247a53575a537d1d7f045
+2021-05-18 13:54:42,050 INFO [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Container postgres:11-alpine is starting: f538f59149d72ebec87382b09624240ca2faddcbc9c247a53575a537d1d7f045
+2021-05-18 13:54:43,918 INFO [io.vertx.howtos.hr.MainVerticle.main()] 🐳 [postgres:11-alpine] - Container postgres:11-alpine started in PT4.510869S
+2021-05-18 13:54:43,918 INFO [io.vertx.howtos.hr.MainVerticle.main()] io.vertx.howtos.hr.MainVerticle - 🚀 Starting Vert.x
+2021-05-18 13:54:44,342 INFO [vert.x-worker-thread-0] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: pg-demo]
+2021-05-18 13:54:44,408 INFO [vert.x-worker-thread-0] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-05-18 13:54:44,581 INFO [vert.x-eventloop-thread-0] io.vertx.howtos.hr.MainVerticle - ✅ HTTP server listening on port 8080
+2021-05-18 13:54:44,586 INFO [vert.x-worker-thread-0] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-18 13:54:44,775 INFO [vert.x-worker-thread-0] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-05-18 13:54:45,006 INFO [vert.x-worker-thread-0] o.h.reactive.provider.impl.ReactiveIntegrator - HRX000001: Hibernate Reactive Preview
+2021-05-18 13:54:45,338 INFO [vert.x-worker-thread-0] o.h.reactive.pool.impl.DefaultSqlClientPool - HRX000011: SQL Client URL [jdbc:postgresql://localhost:55019/postgres]
+2021-05-18 13:54:45,342 WARN [vert.x-worker-thread-0] io.vertx.core.impl.VertxImpl - You're already on a Vert.x context, are you sure you want to create a new Vertx instance?
+2021-05-18 13:54:45,345 INFO [vert.x-worker-thread-0] o.h.reactive.pool.impl.DefaultSqlClientPool - HRX000012: Connection pool size: 10
+[Hibernate]
+    drop table if exists Product cascade
+2021-05-18 13:54:45,521 WARN [vert.x-eventloop-thread-0] io.vertx.sqlclient.impl.SocketConnectionBase - Backend notice: severity='NOTICE', code='00000', message='table "product" does not exist, skipping', detail='null', hint='null', position='null', internalPosition='null', internalQuery='null', where='null', file='tablecmds.c', line='1060', routine='DropErrorMsgNonExistent', schema='null', table='null', column='null', dataType='null', constraint='null'
+[Hibernate]
+    drop sequence if exists hibernate_sequence
+2021-05-18 13:54:45,527 WARN [vert.x-eventloop-thread-0] io.vertx.sqlclient.impl.SocketConnectionBase - Backend notice: severity='NOTICE', code='00000', message='sequence "hibernate_sequence" does not exist, skipping', detail='null', hint='null', position='null', internalPosition='null', internalQuery='null', where='null', file='tablecmds.c', line='1060', routine='DropErrorMsgNonExistent', schema='null', table='null', column='null', dataType='null', constraint='null'
+[Hibernate]
+    drop table if exists Product cascade
+2021-05-18 13:54:45,537 WARN [vert.x-eventloop-thread-0] io.vertx.sqlclient.impl.SocketConnectionBase - Backend notice: severity='NOTICE', code='00000', message='table "product" does not exist, skipping', detail='null', hint='null', position='null', internalPosition='null', internalQuery='null', where='null', file='tablecmds.c', line='1060', routine='DropErrorMsgNonExistent', schema='null', table='null', column='null', dataType='null', constraint='null'
+[Hibernate]
+    drop sequence if exists hibernate_sequence
+2021-05-18 13:54:45,540 WARN [vert.x-eventloop-thread-0] io.vertx.sqlclient.impl.SocketConnectionBase - Backend notice: severity='NOTICE', code='00000', message='sequence "hibernate_sequence" does not exist, skipping', detail='null', hint='null', position='null', internalPosition='null', internalQuery='null', where='null', file='tablecmds.c', line='1060', routine='DropErrorMsgNonExistent', schema='null', table='null', column='null', dataType='null', constraint='null'
+[Hibernate]
+    create sequence hibernate_sequence start 1 increment 1
+[Hibernate]
+    create table Product (
+       id int8 not null,
+        name varchar(255),
+        price numeric(19, 2) not null,
+        primary key (id)
+    )
+[Hibernate]
+    alter table if exists Product
+       add constraint UK_gxubutkbk5o2a6aakbe7q9kww unique (name)
+2021-05-18 13:54:45,574 INFO [vert.x-eventloop-thread-0] io.vertx.howtos.hr.MainVerticle - ✅ Hibernate Reactive is ready
+2021-05-18 13:54:45,576 INFO [vert.x-eventloop-thread-1] io.vertx.howtos.hr.MainVerticle - ✅ Deployment success
+2021-05-18 13:54:45,576 INFO [vert.x-eventloop-thread-1] io.vertx.howtos.hr.MainVerticle - 💡 PostgreSQL container started in 8349ms
+2021-05-18 13:54:45,576 INFO [vert.x-eventloop-thread-1] io.vertx.howtos.hr.MainVerticle - 💡 Vert.x app started in 1658ms
+----
+
+We can insert products:
+
+[source,text]
+----
+$ http :8080/products name="Baguette" price="1.20"
+HTTP/1.1 200 OK
+content-length: 39
+content-type: application/json; charset=utf-8
+
+{
+    "id": 1,
+    "name": "Baguette",
+    "price": 1.2
+}
+
+$ http :8080/products name="Pain" price="1.40"
+HTTP/1.1 200 OK
+content-length: 35
+content-type: application/json; charset=utf-8
+
+{
+    "id": 2,
+    "name": "Pain",
+    "price": 1.4
+}
+----
+
+We can also list a specific product:
+
+[source,text]
+----
+$ http :8080/products/1
+HTTP/1.1 200 OK
+content-length: 39
+content-type: application/json; charset=utf-8
+
+{
+    "id": 1,
+    "name": "Baguette",
+    "price": 1.2
+}
+----
+
+And we can of course list all products:
+
+[source,text]
+----
+$ http :8080/products
+HTTP/1.1 200 OK
+content-length: 77
+content-type: application/json; charset=utf-8
+
+[
+    {
+        "id": 1,
+        "name": "Baguette",
+        "price": 1.2
+    },
+    {
+        "id": 2,
+        "name": "Pain",
+        "price": 1.4
+    }
+]
+----
+
+Since we enabled Hibernate SQL logging, the application logs show the requests being executed such as:
+
+[source,text]
+----
+[Hibernate]
+    select
+        product0_.id as id1_0_0_,
+        product0_.name as name2_0_0_,
+        product0_.price as price3_0_0_
+    from
+        Product product0_
+    where
+        product0_.id=$1
+----
+
+== Summary
+
+- We built a Vert.x service with a HTTP API that accesses a database using a Vert.x reactive driver and Hibernate Reactive.
+- We used the familiar _object-relational mapping_ programming model while still having end-to-end reactive requests processing.
+- TestContainers can be used to easily assemble self-contained demo applications.
+
+== See also
+
+- https://github.com/hibernate/hibernate-reactive[Hibernate Reactive]
+- https://smallrye.io/smallrye-mutiny/[Mutiny]
