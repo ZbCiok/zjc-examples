@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/README.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/README.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/java/io/vertx/howtos/hr/MainVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/java/zjc/examples/vertx/hibernate/MainVerticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/java/io/vertx/howtos/hr/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/java/zjc/examples/vertx/hibernate/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-example-01/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,26 +26,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/hibernate/vertx-hibernate-example-01",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.10141988",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/hibernate/vertx-hibernate-example-01&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.10141988&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vertx/hibernate" />
@@ -119,23 +114,8 @@
       <workItem from="1701978837966" duration="27000" />
       <workItem from="1702122570262" duration="4514000" />
       <workItem from="1702208763366" duration="2120000" />
-      <workItem from="1702224586364" duration="433000" />
-    </task>
-    <task id="LOCAL-00002" summary="README.md">
-      <option name="closed" value="true" />
-      <created>1699635362827</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1699635362827</updated>
-    </task>
-    <task id="LOCAL-00003" summary="README.md">
-      <option name="closed" value="true" />
-      <created>1699635386827</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1699635386827</updated>
+      <workItem from="1702224586364" duration="1285000" />
+      <workItem from="1702282101681" duration="648000" />
     </task>
     <task id="LOCAL-00004" summary="README.md">
       <option name="closed" value="true" />
@@ -513,15 +493,29 @@
       <option name="project" value="LOCAL" />
       <updated>1702224407788</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="corrections 01">
+      <option name="closed" value="true" />
+      <created>1702225035502</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225035502</updated>
+    </task>
+    <task id="LOCAL-00052" summary="corrections 02">
+      <option name="closed" value="true" />
+      <created>1702225210839</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1702225210839</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="hibernate" />
-    <MESSAGE value="CompletionStage 01" />
     <MESSAGE value="CompletionStage 02" />
     <MESSAGE value="Mutiny" />
     <MESSAGE value="Corrections" />
@@ -545,6 +539,8 @@
     <MESSAGE value="readme.md" />
     <MESSAGE value="readme.md 2" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="corrections 01" />
+    <MESSAGE value="corrections 02" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrections 02" />
   </component>
 </project>
