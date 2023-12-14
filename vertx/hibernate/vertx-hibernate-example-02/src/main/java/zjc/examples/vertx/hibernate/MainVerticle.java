@@ -12,14 +12,12 @@ import io.vertx.mutiny.ext.web.handler.BodyHandler;
 import org.hibernate.reactive.mutiny.Mutiny;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.testcontainers.containers.PostgreSQLContainer;
 
 import javax.persistence.Persistence;
 import java.util.List;
 import java.util.Map;
 
 
-// tag::preamble[]
 public class MainVerticle extends AbstractVerticle {
 
   private static final Logger logger = LoggerFactory.getLogger(MainVerticle.class);
@@ -27,9 +25,6 @@ public class MainVerticle extends AbstractVerticle {
 
   @Override
   public Uni<Void> asyncStart() {
-// end::preamble[]
-
-    // tag::hr-start[]
     Uni<Void> startHibernate = Uni.createFrom().deferred(() -> {
       var pgPort = config().getInteger("pgPort", 5432);
       var props = Map.of("javax.persistence.jdbc.url", "jdbc:postgresql://localhost:" + pgPort + "/vertx-rest");  // <1>
@@ -43,9 +38,8 @@ public class MainVerticle extends AbstractVerticle {
 
     startHibernate = vertx.executeBlocking(startHibernate)  // <2>
       .onItem().invoke(() -> logger.info("✅ Hibernate Reactive is ready"));
-    // end::hr-start[]
 
-    // tag::routing[]
+    // ----- router
     Router router = Router.router(vertx);
 
     BodyHandler bodyHandler = BodyHandler.create();
@@ -54,19 +48,16 @@ public class MainVerticle extends AbstractVerticle {
     router.get("/products").respond(this::listProducts);
     router.get("/products/:id").respond(this::getProduct);
     router.post("/products").respond(this::createProduct);
-    // end::routing[]
 
-    // tag::async-start[]
+
     Uni<HttpServer> startHttpServer = vertx.createHttpServer()
       .requestHandler(router)
       .listen(8080)
       .onItem().invoke(() -> logger.info("✅ HTTP server listening on port 8080"));
 
     return Uni.combine().all().unis(startHibernate, startHttpServer).discardItems();  // <1>
-    // end::async-start[]
   }
 
-  // tag::crud-methods[]
   private Uni<List<Product>> listProducts(RoutingContext ctx) {
     return emf.withSession(session -> session
       .createQuery("from Product", Product.class)
@@ -87,47 +78,35 @@ public class MainVerticle extends AbstractVerticle {
       .call(session::flush)
       .replaceWith(product));
   }
-  // end::crud-methods[]
 
   public static void main(String[] args) {
 
     long startTime = System.currentTimeMillis();
 
-    logger.info("🚀 Starting a PostgreSQL container");
-
-    // ---------- PostgreSQL
-//    PostgreSQLContainer<?> postgreSQLContainer = new PostgreSQLContainer<>("postgres:11-alpine")
-//      .withDatabaseName("postgres")
-//      .withUsername("postgres")
-//      .withPassword("vertx-in-action");
-//
-//    postgreSQLContainer.start();
-    // ---------------------
+    logger.info("🚀 Starting a PostgreSQL");
 
     io.vertx.core.Vertx vertx1 = io.vertx.core.Vertx.vertx();
     vertx1.deployVerticle(new MigrationVerticle());
 
-    // ----------------------
 
     long tcTime = System.currentTimeMillis();
 
     logger.info("🚀 Starting Vert.x");
 
-    // tag::vertx-start[]
+
     Vertx vertx = Vertx.vertx();
 
     DeploymentOptions options = new DeploymentOptions().setConfig(new JsonObject()
             .put("pgPort", 5432)); // <1>
-//      .put("pgPort", postgreSQLContainer.getMappedPort(5432))); // <1>
+
 
     vertx.deployVerticle(MainVerticle::new, options).subscribe().with(  // <2>
       ok -> {
         long vertxTime = System.currentTimeMillis();
         logger.info("✅ Deployment success");
-        logger.info("💡 PostgreSQL container started in {}ms", (tcTime - startTime));
+        logger.info("💡 PostgreSQL started in {}ms", (tcTime - startTime));
         logger.info("💡 Vert.x app started in {}ms", (vertxTime - tcTime));
       },
       err -> logger.error("🔥 Deployment failure", err));
-    // end::vertx-start[]
   }
 }

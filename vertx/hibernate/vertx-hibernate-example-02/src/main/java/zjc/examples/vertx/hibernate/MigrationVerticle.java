@@ -19,5 +19,4 @@ public class MigrationVerticle extends AbstractVerticle {
 
         promise.complete();
     }
-
 }
