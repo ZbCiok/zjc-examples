@@ -1,4 +1,4 @@
-package io.vertx.howtos.hr;
+package zjc.examples.vertx.hibernate;
 
 import io.smallrye.mutiny.Uni;
 import io.smallrye.mutiny.vertx.core.AbstractVerticle;

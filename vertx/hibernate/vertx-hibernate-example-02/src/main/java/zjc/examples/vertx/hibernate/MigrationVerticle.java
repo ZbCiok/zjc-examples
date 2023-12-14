@@ -1,6 +1,6 @@
-package io.vertx.howtos.hr;
+package zjc.examples.vertx.hibernate;
 
-import io.vertx.howtos.hr.utils.DbUtils;
+import zjc.examples.vertx.hibernate.utils.DbUtils;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Promise;
 import org.flywaydb.core.Flyway;

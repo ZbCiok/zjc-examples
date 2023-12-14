@@ -1,7 +1,7 @@
-package io.vertx.howtos.hr;
+package zjc.examples.vertx.hibernate;
 
 import io.vertx.core.Vertx;
-import io.vertx.howtos.hr.MigrationVerticle;
+import zjc.examples.vertx.hibernate.MigrationVerticle;
 
 public class MigrationVerticleMain {
     public static void main(String[] args) {

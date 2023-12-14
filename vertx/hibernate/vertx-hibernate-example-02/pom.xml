@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>io.vertx.howtos</groupId>
+  <groupId>zjc.examples</groupId>
   <artifactId>vertx-hibernate-example-02</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 
@@ -14,7 +14,7 @@
     <postgresql.version>42.2.18</postgresql.version>
     <flyway.version>9.0.2</flyway.version>
     <jackson.version>2.12.0</jackson.version>
-    <main.verticle>io.vertx.howtos.hr.MainVerticle</main.verticle>
+    <main.verticle>zjc.examples.vertx.hibernate.MainVerticle</main.verticle>
   </properties>
 
   <dependencyManagement>

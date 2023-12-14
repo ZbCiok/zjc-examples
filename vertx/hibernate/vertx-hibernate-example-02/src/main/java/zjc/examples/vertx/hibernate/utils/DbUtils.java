@@ -1,4 +1,4 @@
-package io.vertx.howtos.hr.utils;
+package zjc.examples.vertx.hibernate.utils;
 
 import io.vertx.core.Vertx;
 import io.vertx.pgclient.PgConnectOptions;
