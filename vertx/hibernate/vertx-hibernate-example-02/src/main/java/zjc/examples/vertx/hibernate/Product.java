@@ -8,7 +8,6 @@ import java.math.BigDecimal;
 public class Product {
 
   @Id
-  //@GeneratedValue
   private Long id;
 
   @Column(unique = true)
