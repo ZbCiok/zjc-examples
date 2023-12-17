@@ -31,7 +31,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/hibernate/vertx-hibernate-example-02",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,8 +46,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/vertx/pg" />
       <recent name="$PROJECT_DIR$/vertx/hibernate" />
+      <recent name="$PROJECT_DIR$/vertx/pg" />
       <recent name="$PROJECT_DIR$/vertx/packaging" />
       <recent name="$PROJECT_DIR$/vertx/verticle" />
       <recent name="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-pub-sub" />
@@ -116,14 +116,7 @@
       <workItem from="1702282101681" duration="648000" />
       <workItem from="1702409741700" duration="921000" />
       <workItem from="1702458169244" duration="715000" />
-    </task>
-    <task id="LOCAL-00007" summary="README.md">
-      <option name="closed" value="true" />
-      <created>1699641904133</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1699641904133</updated>
+      <workItem from="1702557879874" duration="1520000" />
     </task>
     <task id="LOCAL-00008" summary="README.md">
       <option name="closed" value="true" />
@@ -509,7 +502,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702458263463</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1702557946836</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1702557946837</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,8 +540,8 @@
     <MESSAGE value="readme.md 2" />
     <MESSAGE value="corrections 01" />
     <MESSAGE value="corrections 02" />
-    <MESSAGE value="first commit" />
     <MESSAGE value="README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
