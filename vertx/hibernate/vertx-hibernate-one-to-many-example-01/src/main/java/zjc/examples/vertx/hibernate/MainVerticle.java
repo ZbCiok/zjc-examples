@@ -9,6 +9,7 @@ import io.vertx.mutiny.core.http.HttpServer;
 import io.vertx.mutiny.ext.web.Router;
 import io.vertx.mutiny.ext.web.RoutingContext;
 import io.vertx.mutiny.ext.web.handler.BodyHandler;
+import zjc.examples.vertx.hibernate.model.Comment;
 import zjc.examples.vertx.hibernate.model.Product;
 import org.hibernate.reactive.mutiny.Mutiny;
 import org.slf4j.Logger;
@@ -53,6 +54,8 @@ public class MainVerticle extends AbstractVerticle {
     router.get("/products").respond(this::listProducts);
     router.get("/products/:id").respond(this::getProduct);
     router.post("/products").respond(this::createProduct);
+
+    router.get("/comments").respond(this::listComments);
     // end router
 
     // async-start[]
@@ -65,7 +68,7 @@ public class MainVerticle extends AbstractVerticle {
     // end async-start[]
   }
 
-  // crud-methods[]
+  // crud methods Product
   private Uni<List<Product>> listProducts(RoutingContext ctx) {
     return emf.withSession(session -> session
       .createQuery("from Product", Product.class)
@@ -86,7 +89,15 @@ public class MainVerticle extends AbstractVerticle {
       .call(session::flush)
       .replaceWith(product));
   }
-  // end crud-methods[]
+  // end crud-methods Product
+
+  // crud methods Comment
+  private Uni<List<Comment>> listComments(RoutingContext ctx) {
+    return emf.withSession(session -> session
+            .createQuery("from Comment", Comment.class)
+            .getResultList());
+  }
+  // end crud methods Comment
 
   public static void main(String[] args) {
 
