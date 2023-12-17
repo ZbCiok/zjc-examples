@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="" />
+    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-one-to-many-example-01/src/main/java/zjc/examples/vertx/hibernate/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-one-to-many-example-01/src/main/java/zjc/examples/vertx/hibernate/model/Comment.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +34,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/hibernate/vertx-hibernate-example-02",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/spring-boot-jpa/com.bezkoder/spring-boot-one-to-many-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -117,22 +120,7 @@
       <workItem from="1702409741700" duration="921000" />
       <workItem from="1702458169244" duration="715000" />
       <workItem from="1702557879874" duration="1520000" />
-    </task>
-    <task id="LOCAL-00008" summary="README.md">
-      <option name="closed" value="true" />
-      <created>1699714544750</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1699714544750</updated>
-    </task>
-    <task id="LOCAL-00009" summary="README.md">
-      <option name="closed" value="true" />
-      <created>1699715286485</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1699715286485</updated>
+      <workItem from="1702812993870" duration="1721000" />
     </task>
     <task id="LOCAL-00010" summary="README.md">
       <option name="closed" value="true" />
@@ -510,14 +498,29 @@
       <option name="project" value="LOCAL" />
       <updated>1702557946837</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1702813203724</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1702813203725</updated>
+    </task>
+    <task id="LOCAL-00058" summary="README.md 01">
+      <option name="closed" value="true" />
+      <created>1702813355416</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1702813355416</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="CompletionStage 02" />
     <MESSAGE value="Mutiny" />
     <MESSAGE value="Corrections" />
     <MESSAGE value="Corrections 02" />
@@ -542,6 +545,7 @@
     <MESSAGE value="corrections 02" />
     <MESSAGE value="README.md" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="README.md 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md 01" />
   </component>
 </project>
