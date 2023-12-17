@@ -1,2 +1,2 @@
-## vertx-hibernate-example-02
+## vertx-hibernate-one-to-many-example-01
 * mvn compile exec:java
