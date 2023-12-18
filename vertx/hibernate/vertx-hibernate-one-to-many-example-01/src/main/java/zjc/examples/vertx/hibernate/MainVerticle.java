@@ -23,7 +23,7 @@ import java.util.Map;
 public class MainVerticle extends AbstractVerticle {
 
   private static final Logger logger = LoggerFactory.getLogger(MainVerticle.class);
-  private Mutiny.SessionFactory emf;  // <1>
+  private Mutiny.SessionFactory emf;
 
   @Override
   public Uni<Void> asyncStart() {
@@ -56,6 +56,8 @@ public class MainVerticle extends AbstractVerticle {
     router.post("/products").respond(this::createProduct);
 
     router.get("/comments").respond(this::listComments);
+
+    router.get("/comments/:id").respond(this::createComment);
     // end router
 
     // async-start[]
@@ -97,6 +99,16 @@ public class MainVerticle extends AbstractVerticle {
             .createQuery("from Comment", Comment.class)
             .getResultList());
   }
+
+  private Uni<Product> createComment(RoutingContext ctx) {
+    long id = Long.parseLong(ctx.pathParam("id"));
+    Uni<Product> product = emf.withSession(session -> session
+            .find(Product.class, id)
+            .onItem().ifNull().continueWith(Product::new));
+    //if (product == null) System.out.println("NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
+    return product;
+  }
+
   // end crud methods Comment
 
   public static void main(String[] args) {

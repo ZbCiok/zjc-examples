@@ -9,6 +9,7 @@ import static jakarta.persistence.FetchType.LAZY;
 public class Comment { 
 
   @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
   @Column(nullable = true)
