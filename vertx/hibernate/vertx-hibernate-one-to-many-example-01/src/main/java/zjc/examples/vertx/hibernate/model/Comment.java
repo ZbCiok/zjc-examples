@@ -1,8 +1,10 @@
 package zjc.examples.vertx.hibernate.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 
+import static jakarta.persistence.FetchType.EAGER;
 import static jakarta.persistence.FetchType.LAZY;
 
 @Entity
@@ -12,12 +14,14 @@ public class Comment {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
 
+
   @Column(nullable = true)
   private String content;
 
   @NotNull
   @JoinColumn(name = "product_id", nullable = false)
-  @ManyToOne(fetch = LAZY)
+  @ManyToOne(cascade = CascadeType.MERGE)
+  @JsonIgnore
   private Product product;
 
 
@@ -31,6 +35,7 @@ public class Comment {
   public void setId(Long id) {
     this.id = id;
   }
+
 
   public String getContent() {
     return content;

@@ -56,8 +56,7 @@ public class MainVerticle extends AbstractVerticle {
     router.post("/products").respond(this::createProduct);
 
     router.get("/comments").respond(this::listComments);
-
-    router.get("/comments/:id").respond(this::createComment);
+    router.post("/products/:id/comments").respond(this::createComment);
     // end router
 
     // async-start[]
@@ -100,13 +99,21 @@ public class MainVerticle extends AbstractVerticle {
             .getResultList());
   }
 
-  private Uni<Product> createComment(RoutingContext ctx) {
+  private Uni<Comment> createComment(RoutingContext ctx) {
+
     long id = Long.parseLong(ctx.pathParam("id"));
-    Uni<Product> product = emf.withSession(session -> session
-            .find(Product.class, id)
-            .onItem().ifNull().continueWith(Product::new));
-    //if (product == null) System.out.println("NNNNNNNNNNNNNNNNNNNNNNNNNNNNNN");
-    return product;
+    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>> id  " + id);
+
+    // String commentParam = ctx.pathParam("comments");
+    Comment comment = ctx.body().asPojo(Comment.class);
+    Uni<Comment> ucomment = null;
+    ucomment = emf.withSession(session -> session
+            .find(Product.class, id).map(product -> { comment.setProduct(product);
+             System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX " + comment.getContent());
+             return null;
+            }));
+
+          return ucomment;
   }
 
   // end crud methods Comment
