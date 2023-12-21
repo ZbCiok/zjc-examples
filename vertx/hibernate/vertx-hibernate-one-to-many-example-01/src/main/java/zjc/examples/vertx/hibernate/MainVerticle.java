@@ -18,7 +18,6 @@ import org.slf4j.LoggerFactory;
 import static jakarta.persistence.Persistence.createEntityManagerFactory;
 import static org.hibernate.reactive.mutiny.Mutiny.SessionFactory;
 
-import jakarta.persistence.Persistence;
 import java.util.List;
 import java.util.Map;
 
@@ -27,6 +26,7 @@ public class MainVerticle extends AbstractVerticle {
 
   private static final Logger logger = LoggerFactory.getLogger(MainVerticle.class);
   private Mutiny.SessionFactory emf;
+  static SessionFactory factory;
 
   @Override
   public Uni<Void> asyncStart() {
@@ -101,7 +101,6 @@ public class MainVerticle extends AbstractVerticle {
             .getResultList());
   }
 
-
   private Uni<Comment> createComment(RoutingContext ctx) {
 
     long id = Long.parseLong(ctx.pathParam("id"));
@@ -109,10 +108,7 @@ public class MainVerticle extends AbstractVerticle {
 
     try {
       factory.withTransaction(
-                      session -> session.find(Product.class, id)
-                              // print its title
-                              .invoke(product -> { System.out.println(id + " is a great product!");
-                                                  comment.setProduct(product); })
+                      session -> session.find(Product.class, id).invoke(comment::setProduct)
               )
               .await().indefinitely();
 
@@ -122,19 +118,18 @@ public class MainVerticle extends AbstractVerticle {
               )
               // wait for it to finish
               .await().indefinitely();
+
       return Uni.createFrom().item(comment);
+
+    } finally {
+      factory.close();
     }
-		finally {
-    factory.close();
-  }
   }
 
   // end crud methods Comment
 
-  static SessionFactory factory;
   public static void main(String[] args) {
-    factory =
-            createEntityManagerFactory( persistenceUnitName( args ) )
+    factory = createEntityManagerFactory( persistenceUnitName( args ) )
                     .unwrap(SessionFactory.class);
 
     long startTime = System.currentTimeMillis();
