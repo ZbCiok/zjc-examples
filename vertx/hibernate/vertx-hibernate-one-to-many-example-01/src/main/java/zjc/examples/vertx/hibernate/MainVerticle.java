@@ -15,6 +15,9 @@ import org.hibernate.reactive.mutiny.Mutiny;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import static jakarta.persistence.Persistence.createEntityManagerFactory;
+import static org.hibernate.reactive.mutiny.Mutiny.SessionFactory;
+
 import jakarta.persistence.Persistence;
 import java.util.List;
 import java.util.Map;
@@ -33,8 +36,7 @@ public class MainVerticle extends AbstractVerticle {
       var pgPort = config().getInteger("pgPort", 5432);
       var props = Map.of("jakarta.persistence.jdbc.url", "jdbc:postgresql://localhost:" + pgPort + "/vertx-rest");  // <1>
 
-      emf = Persistence
-        .createEntityManagerFactory("pg-demo", props)
+      emf = createEntityManagerFactory("pg-demo", props)
         .unwrap(Mutiny.SessionFactory.class);
 
       return Uni.createFrom().voidItem();
@@ -99,26 +101,41 @@ public class MainVerticle extends AbstractVerticle {
             .getResultList());
   }
 
+
   private Uni<Comment> createComment(RoutingContext ctx) {
 
     long id = Long.parseLong(ctx.pathParam("id"));
-    System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>> id  " + id);
-
-    // String commentParam = ctx.pathParam("comments");
     Comment comment = ctx.body().asPojo(Comment.class);
-    Uni<Comment> ucomment = null;
-    ucomment = emf.withSession(session -> session
-            .find(Product.class, id).map(product -> { comment.setProduct(product);
-             System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX " + comment.getContent());
-             return null;
-            }));
 
-          return ucomment;
+    try {
+      factory.withTransaction(
+                      session -> session.find(Product.class, id)
+                              // print its title
+                              .invoke(product -> { System.out.println(id + " is a great product!");
+                                                  comment.setProduct(product); })
+              )
+              .await().indefinitely();
+
+      factory.withTransaction(
+                      // persist the comment
+                      (session, tx) -> session.persistAll(comment)
+              )
+              // wait for it to finish
+              .await().indefinitely();
+      return Uni.createFrom().item(comment);
+    }
+		finally {
+    factory.close();
+  }
   }
 
   // end crud methods Comment
 
+  static SessionFactory factory;
   public static void main(String[] args) {
+    factory =
+            createEntityManagerFactory( persistenceUnitName( args ) )
+                    .unwrap(SessionFactory.class);
 
     long startTime = System.currentTimeMillis();
 
@@ -146,5 +163,9 @@ public class MainVerticle extends AbstractVerticle {
       },
       err -> logger.error("🔥 Deployment failure", err));
     // end vertx-start[]
+  }
+
+  public static String persistenceUnitName(String[] args) {
+    return args.length > 0 ? args[0] : "pg-demo";
   }
 }

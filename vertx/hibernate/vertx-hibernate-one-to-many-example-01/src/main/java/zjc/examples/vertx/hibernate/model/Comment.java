@@ -28,6 +28,10 @@ public class Comment {
   public Comment() {
   }
 
+  public Comment(String content) {
+    this.content = content;
+  }
+
   public Long getId() {
     return id;
   }
