@@ -26,7 +26,7 @@ public class MainVerticle extends AbstractVerticle {
 
   private static final Logger logger = LoggerFactory.getLogger(MainVerticle.class);
   private Mutiny.SessionFactory emf;
-  static SessionFactory factory;
+  private static SessionFactory factory;
 
   @Override
   public Uni<Void> asyncStart() {
@@ -122,7 +122,7 @@ public class MainVerticle extends AbstractVerticle {
       return Uni.createFrom().item(comment);
 
     } finally {
-      factory.close();
+      //factory.close();
     }
   }
 
@@ -163,4 +163,5 @@ public class MainVerticle extends AbstractVerticle {
   public static String persistenceUnitName(String[] args) {
     return args.length > 0 ? args[0] : "pg-demo";
   }
+
 }
