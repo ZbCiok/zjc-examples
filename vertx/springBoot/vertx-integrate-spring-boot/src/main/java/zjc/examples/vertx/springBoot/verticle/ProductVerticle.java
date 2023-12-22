@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import java.io.FileNotFoundException;
 
 @Component
-public class StudentVerticle extends AbstractVerticle {
+public class ProductVerticle extends AbstractVerticle {
 
     @Override
     public void start(Promise<Void> startPromise) throws Exception {

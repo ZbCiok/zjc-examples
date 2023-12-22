@@ -1,6 +1,6 @@
 package zjc.examples.vertx.springBoot.config;
 
-import zjc.examples.vertx.springBoot.verticle.StudentVerticle;
+import zjc.examples.vertx.springBoot.verticle.ProductVerticle;
 import io.vertx.core.Vertx;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -11,7 +11,7 @@ import javax.annotation.PostConstruct;
 public class MainConfig {
 
     @Autowired
-    StudentVerticle studentVerticle;
+    ProductVerticle productVerticle;
 
     @Autowired
     zjc.examples.vertx.springBoot.verticle.MQHandleVerticle MQHandleVerticle;
@@ -20,7 +20,7 @@ public class MainConfig {
     public void deployVerticle() {
         // deploy the verticles
         Vertx vertx = Vertx.vertx();
-        vertx.deployVerticle(studentVerticle);
+        vertx.deployVerticle(productVerticle);
         vertx.deployVerticle(MQHandleVerticle);
     }
 }
