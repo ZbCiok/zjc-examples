@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/vertx/springBoot/vertx-integrate-spring-boot/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/springBoot/vertx-integrate-spring-boot/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/springBoot/vertx-integrate-spring-boot/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/springBoot/vertx-integrate-spring-boot/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/springBoot/vertx-integrate-spring-boot/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/springBoot/vertx-integrate-spring-boot/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/springBoot/vertx-integrate-spring-boot/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/springBoot/vertx-integrate-spring-boot/src/main/java/zjc/examples/vertx/springBoot/VertxApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/springBoot/vertx-integrate-spring-boot/src/main/java/zjc/examples/vertx/springBoot/config/MainConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/springBoot/vertx-integrate-spring-boot/src/main/java/zjc/examples/vertx/springBoot/verticle/MQHandleVerticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/springBoot/vertx-integrate-spring-boot/src/main/java/zjc/examples/vertx/springBoot/verticle/StudentVerticle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/springBoot/vertx-integrate-spring-boot/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vertx/springBoot/vertx-integrate-spring-boot/src/test/java/zjc/examples/vertx/springBoot/VertxOverviewApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-one-to-many-example-01/src/main/java/zjc/examples/vertx/hibernate/MainVerticle.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-one-to-many-example-01/src/main/java/zjc/examples/vertx/hibernate/MainVerticle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-one-to-many-example-01/src/main/java/zjc/examples/vertx/hibernate/model/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/vertx/hibernate/vertx-hibernate-one-to-many-example-01/src/main/java/zjc/examples/vertx/hibernate/model/Comment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +46,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/spring-boot-jpa/com.bezkoder/spring-boot-one-to-many-master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/vertx/springBoot",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,11 +62,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vertx/springBoot" />
       <recent name="$PROJECT_DIR$/vertx/hibernate" />
       <recent name="$PROJECT_DIR$/vertx/pg" />
       <recent name="$PROJECT_DIR$/vertx/packaging" />
       <recent name="$PROJECT_DIR$/vertx/verticle" />
-      <recent name="$PROJECT_DIR$/vertx/eventBus/vertx-event-bus-pub-sub" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example01/src/main/java/zjc/examples/vertx.verticle" />
@@ -124,14 +136,9 @@
       <workItem from="1702812993870" duration="3020000" />
       <workItem from="1702882574344" duration="930000" />
       <workItem from="1702969290150" duration="631000" />
-    </task>
-    <task id="LOCAL-00012" summary="correction">
-      <option name="closed" value="true" />
-      <created>1699717149681</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1699717149681</updated>
+      <workItem from="1702974543405" duration="685000" />
+      <workItem from="1703243518760" duration="14000" />
+      <workItem from="1703243550428" duration="503000" />
     </task>
     <task id="LOCAL-00013" summary="correction">
       <option name="closed" value="true" />
@@ -517,14 +524,21 @@
       <option name="project" value="LOCAL" />
       <updated>1702819321505</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="Comments 02">
+      <option name="closed" value="true" />
+      <created>1702974616258</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1702974616258</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Corrections 02" />
     <MESSAGE value="Corrections 03" />
     <MESSAGE value="vertx 01" />
     <MESSAGE value="verticle 01" />
@@ -549,6 +563,7 @@
     <MESSAGE value="README.md 01" />
     <MESSAGE value="Corrections Comment.java 01" />
     <MESSAGE value="Comments 01" />
-    <option name="LAST_COMMIT_MESSAGE" value="Comments 01" />
+    <MESSAGE value="Comments 02" />
+    <option name="LAST_COMMIT_MESSAGE" value="Comments 02" />
   </component>
 </project>
