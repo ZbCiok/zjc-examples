@@ -18,7 +18,6 @@ public class MainConfig {
 
     @PostConstruct
     public void deployVerticle() {
-        // deploy the verticles
         Vertx vertx = Vertx.vertx();
         vertx.deployVerticle(productVerticle);
         vertx.deployVerticle(MQHandleVerticle);

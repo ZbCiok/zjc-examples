@@ -1,15 +1,13 @@
-package zjc.examples.vertx.springBoot.verticle;
+package zjc.examples.vertx.rest.router;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Promise;
 import io.vertx.core.http.HttpServerOptions;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
-import org.springframework.stereotype.Component;
 
 import java.io.FileNotFoundException;
 
-@Component
 public class ProductVerticle extends AbstractVerticle {
 
     @Override
@@ -18,10 +16,10 @@ public class ProductVerticle extends AbstractVerticle {
                 .requestHandler(getRouter())
                 .listen(8080,asyncResult -> {
                     if (asyncResult.succeeded()) {
-                        System.out.println("SUCCESS");
+                        System.out.println("ProductVerticle SUCCESS");
                         startPromise.complete();
                     } else {
-                        System.out.println("FAILED");
+                        System.out.println("ProductVerticle FAILED");
                         startPromise.fail(asyncResult.cause());
                     }
                 });
