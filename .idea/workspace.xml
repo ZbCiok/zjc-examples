@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/.mvn/wrapper/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/src/main/docker/Dockerfile.jvm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/src/main/docker/Dockerfile.legacy-jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/src/main/docker/Dockerfile.native" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/src/main/docker/Dockerfile.native-micro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/src/main/java/zjc/examples/GreetingResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/src/main/resources/META-INF/resources/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/src/test/java/zjc/examples/GreetingResourceIT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quarkus/quarkus-first-application/src/test/java/zjc/examples/GreetingResourceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -146,15 +126,7 @@
       <workItem from="1703243550428" duration="2631000" />
       <workItem from="1703318343359" duration="3636000" />
       <workItem from="1703322369752" duration="3299000" />
-      <workItem from="1703411897115" duration="2413000" />
-    </task>
-    <task id="LOCAL-00017" summary="correction">
-      <option name="closed" value="true" />
-      <created>1699731902040</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1699731902040</updated>
+      <workItem from="1703411897115" duration="3829000" />
     </task>
     <task id="LOCAL-00018" summary="correction">
       <option name="closed" value="true" />
@@ -540,7 +512,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703426014454</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1703427455888</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1703427455889</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
