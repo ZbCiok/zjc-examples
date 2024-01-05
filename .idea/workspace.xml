@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +32,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/quarkus/lifecycle-quickstart/quarkus-application-initialization-termination",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/quarkus",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -132,15 +130,7 @@
       <workItem from="1703513769793" duration="1306000" />
       <workItem from="1703579570783" duration="2559000" />
       <workItem from="1703845301746" duration="350000" />
-      <workItem from="1703963480168" duration="395000" />
-    </task>
-    <task id="LOCAL-00021" summary="setup postgresql">
-      <option name="closed" value="true" />
-      <created>1699796928122</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1699796928122</updated>
+      <workItem from="1703963480168" duration="1048000" />
     </task>
     <task id="LOCAL-00022" summary="corrections">
       <option name="closed" value="true" />
@@ -526,7 +516,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703845417632</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1703964071434</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1703964071435</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -556,8 +554,8 @@
     <MESSAGE value="Corrections Comment.java 01" />
     <MESSAGE value="Comments 01" />
     <MESSAGE value="Comments 02" />
-    <MESSAGE value="first commit" />
     <MESSAGE value="Dockerfile.native" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dockerfile.native" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
