@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="" />
+    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/quarkus/extensions/first-extension/quarkus-first-extension/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/extensions/first-extension/quarkus-first-extension/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quarkus/extensions/first-extension/quarkus-first-extension-app/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/quarkus/extensions/first-extension/quarkus-first-extension-app/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +37,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/quarkus",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/quarkus/extensions/first-extension/quarkus-first-extension-app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,11 +52,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quarkus/extensions/first-extension" />
       <recent name="$PROJECT_DIR$/quarkus" />
       <recent name="$PROJECT_DIR$/smallrye" />
       <recent name="$PROJECT_DIR$/vertx/httpserver-router" />
       <recent name="$PROJECT_DIR$/vertx/springBoot" />
-      <recent name="$PROJECT_DIR$/vertx/hibernate" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example01/src/main/java/zjc/examples/vertx.verticle" />
@@ -131,14 +136,8 @@
       <workItem from="1703579570783" duration="2559000" />
       <workItem from="1703845301746" duration="350000" />
       <workItem from="1703963480168" duration="1048000" />
-    </task>
-    <task id="LOCAL-00022" summary="corrections">
-      <option name="closed" value="true" />
-      <created>1699799958295</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1699799958295</updated>
+      <workItem from="1704447444795" duration="357000" />
+      <workItem from="1704447929256" duration="374000" />
     </task>
     <task id="LOCAL-00023" summary="corrections">
       <option name="closed" value="true" />
@@ -524,7 +523,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703964071435</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1704447678766</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1704447678767</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
