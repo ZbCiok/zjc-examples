@@ -1,6 +1,6 @@
 # quarkus-hibernate-orm-quickstart
 
-This is a minimal CRUD service exposing a couple of endpoints over REST.
+This is a minimal CRUD example exposing a couple of endpoints over REST.
 
 This is using:
  - RESTEasy to expose the REST endpoints
