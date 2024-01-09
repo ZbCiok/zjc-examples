@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="README.md">
+    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +34,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/zbyszek/IdeaProjects/reactive/github/zjc-examples&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/quarkus/hibernate&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -49,11 +49,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quarkus/hibernate" />
       <recent name="$PROJECT_DIR$/quarkus/extensions/first-extension" />
       <recent name="$PROJECT_DIR$/quarkus" />
       <recent name="$PROJECT_DIR$/smallrye" />
       <recent name="$PROJECT_DIR$/vertx/httpserver-router" />
-      <recent name="$PROJECT_DIR$/vertx/springBoot" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example01/src/main/java/zjc/examples/vertx.verticle" />
@@ -138,22 +138,8 @@
       <workItem from="1704623128937" duration="541000" />
       <workItem from="1704631697157" duration="2275000" />
       <workItem from="1704642804561" duration="37000" />
-    </task>
-    <task id="LOCAL-00025" summary="CompletionStage 01">
-      <option name="closed" value="true" />
-      <created>1700138556974</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1700138556974</updated>
-    </task>
-    <task id="LOCAL-00026" summary="CompletionStage 02">
-      <option name="closed" value="true" />
-      <created>1700153025742</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1700153025742</updated>
+      <workItem from="1704729778704" duration="1518000" />
+      <workItem from="1704792685276" duration="18000" />
     </task>
     <task id="LOCAL-00027" summary="Mutiny">
       <option name="closed" value="true" />
@@ -531,7 +517,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704453104457</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1704729893384</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1704729893385</updated>
+    </task>
+    <task id="LOCAL-00075" summary="README.md">
+      <option name="closed" value="true" />
+      <created>1704730081053</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1704730081053</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
