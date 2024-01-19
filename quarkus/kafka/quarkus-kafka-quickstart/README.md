@@ -13,4 +13,5 @@ Then launch Docker Compose:
 ```bash
 docker-compose up
 ```
+Description: https://jreact.com/index.php/kafka-short-reminder/quarkus-kafka/
 
