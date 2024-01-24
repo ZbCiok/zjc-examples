@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quarkus/kafka/quarkus-kafka-quickstart/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/quarkus/kafka/quarkus-kafka-quickstart/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,15 +147,7 @@
       <workItem from="1705136507226" duration="678000" />
       <workItem from="1705145660347" duration="900000" />
       <workItem from="1705172480335" duration="19000" />
-      <workItem from="1705684109323" duration="911000" />
-    </task>
-    <task id="LOCAL-00032" summary="verticle 01">
-      <option name="closed" value="true" />
-      <created>1700590626230</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1700590626230</updated>
+      <workItem from="1705684109323" duration="1154000" />
     </task>
     <task id="LOCAL-00033" summary="verticle 02">
       <option name="closed" value="true" />
@@ -544,14 +533,21 @@
       <option name="project" value="LOCAL" />
       <updated>1705684503205</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="README.md 2">
+      <option name="closed" value="true" />
+      <created>1705685029730</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1705685029730</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="vertx 01" />
     <MESSAGE value="verticle 01" />
     <MESSAGE value="verticle 02" />
     <MESSAGE value="verticle 03" />
@@ -576,6 +572,7 @@
     <MESSAGE value="Dockerfile.native" />
     <MESSAGE value="first commit" />
     <MESSAGE value="README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
+    <MESSAGE value="README.md 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md 2" />
   </component>
 </project>
