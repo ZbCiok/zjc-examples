@@ -1,1 +1,1 @@
-Quarkus guide: https://docs.quarkiverse.io/quarkus-reactive-messaging-http/dev/reactive-messaging-http
+Description: https://jreact.com/index.php/2024/01/24/quarkus-reactive-messaging-http/
