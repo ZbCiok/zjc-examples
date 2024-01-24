@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="" />
+    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/quarkus/reactive-messaging/reactive-messaging-http-quickstart/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/quarkus/reactive-messaging/reactive-messaging-http-quickstart/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +34,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/quarkus/kafka",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/quarkus/reactive-messaging",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -47,11 +49,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quarkus/reactive-messaging" />
       <recent name="$PROJECT_DIR$/quarkus/kafka" />
       <recent name="$PROJECT_DIR$/quarkus/panache" />
       <recent name="$PROJECT_DIR$/quarkus/hibernate" />
       <recent name="$PROJECT_DIR$/quarkus/extensions/first-extension" />
-      <recent name="$PROJECT_DIR$/quarkus" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example01/src/main/java/zjc/examples/vertx.verticle" />
@@ -148,14 +150,7 @@
       <workItem from="1705145660347" duration="900000" />
       <workItem from="1705172480335" duration="19000" />
       <workItem from="1705684109323" duration="1154000" />
-    </task>
-    <task id="LOCAL-00033" summary="verticle 02">
-      <option name="closed" value="true" />
-      <created>1700590804733</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1700590804733</updated>
+      <workItem from="1706104440136" duration="419000" />
     </task>
     <task id="LOCAL-00034" summary="verticle 03">
       <option name="closed" value="true" />
@@ -541,7 +536,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705685029730</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1706104625781</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1706104625782</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,9 +573,9 @@
     <MESSAGE value="Comments 01" />
     <MESSAGE value="Comments 02" />
     <MESSAGE value="Dockerfile.native" />
-    <MESSAGE value="first commit" />
     <MESSAGE value="README.md" />
     <MESSAGE value="README.md 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md 2" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
