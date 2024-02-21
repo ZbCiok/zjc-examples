@@ -2,9 +2,11 @@
 <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.acme</groupId>
+
+  <groupId>zjc.examples</groupId>
   <artifactId>quarkus-mongodb-quickstart</artifactId>
   <version>1.0.0-SNAPSHOT</version>
+
   <properties>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <surefire-plugin.version>3.1.2</surefire-plugin.version>
@@ -16,6 +18,7 @@
     <maven.compiler.target>11</maven.compiler.target>
     <assertj.version>3.22.0</assertj.version>
   </properties>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
