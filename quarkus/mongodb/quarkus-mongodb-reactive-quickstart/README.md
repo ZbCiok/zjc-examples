@@ -11,5 +11,5 @@ quarkus dev
 #### Open a browser to http://localhost:8080/reactive_fruits
 
 ### ---
-Description: https://jreact.com/index.php/2024/02/21/quarkus-mongodb-reactive-quickstart/
-Quarkus guide: https://quarkus.io/guides/mongodb
+#### Description: https://jreact.com/index.php/2024/02/21/quarkus-mongodb-reactive-quickstart/
+#### Quarkus guide: https://quarkus.io/guides/mongodb
