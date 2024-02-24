@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="" />
+    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +34,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/quarkus/tmp-quarkus-mongodb-quickstart/quarkus-mongodb-reactive-quickstart",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/quarkus/tmp-quarkus-aws-dynamodb-quickstart/amazon-dynamodb-quickstart",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -159,22 +161,8 @@
       <workItem from="1706111115500" duration="6000" />
       <workItem from="1708499828353" duration="135000" />
       <workItem from="1708508227119" duration="2581000" />
-    </task>
-    <task id="LOCAL-00040" summary="event bus 01">
-      <option name="closed" value="true" />
-      <created>1700836912509</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1700836912509</updated>
-    </task>
-    <task id="LOCAL-00041" summary="event-bus-pub-sub">
-      <option name="closed" value="true" />
-      <created>1701809740354</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1701809740354</updated>
+      <workItem from="1708535321776" duration="1045000" />
+      <workItem from="1708585605596" duration="1270000" />
     </task>
     <task id="LOCAL-00042" summary="README.md">
       <option name="closed" value="true" />
@@ -552,7 +540,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708508428518</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1708535524272</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1708535524272</updated>
+    </task>
+    <task id="LOCAL-00090" summary="README.md">
+      <option name="closed" value="true" />
+      <created>1708536017001</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1708536017001</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -582,8 +586,8 @@
     <MESSAGE value="Comments 02" />
     <MESSAGE value="Dockerfile.native" />
     <MESSAGE value="README.md 2" />
-    <MESSAGE value="README.md" />
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
   </component>
 </project>
