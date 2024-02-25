@@ -34,7 +34,7 @@ aws dynamodb create-table --table-name QuarkusFruits \
 
 ### Run example:
 
-- `./mvnw clean package` and then 
+- `./mvnw clean package -DskipTests` and then 
 - `java -jar ./target/quarkus-app/quarkus-run.jar`
 
 
