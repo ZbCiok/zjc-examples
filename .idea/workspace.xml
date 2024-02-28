@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +32,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/quarkus/tmp-quarkus-amqp1.0-quickstart/quarkus-amqp1.0-quickstart",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/quarkus/reactive-messaging",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,9 +47,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/quarkus/reactive-messaging" />
       <recent name="$PROJECT_DIR$/quarkus/dynamodb" />
       <recent name="$PROJECT_DIR$/quarkus/mongodb" />
-      <recent name="$PROJECT_DIR$/quarkus/reactive-messaging" />
       <recent name="$PROJECT_DIR$/quarkus/kafka" />
       <recent name="$PROJECT_DIR$/quarkus/panache" />
     </key>
@@ -169,14 +167,7 @@
       <workItem from="1708855263361" duration="711000" />
       <workItem from="1708869674316" duration="920000" />
       <workItem from="1708968764834" duration="63000" />
-    </task>
-    <task id="LOCAL-00047" summary="readme.md 2">
-      <option name="closed" value="true" />
-      <created>1702124074034</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1702124074034</updated>
+      <workItem from="1709054563114" duration="761000" />
     </task>
     <task id="LOCAL-00048" summary="first commit">
       <option name="closed" value="true" />
@@ -562,7 +553,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708869854808</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1709054709860</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1709054709861</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,8 +591,8 @@
     <MESSAGE value="Dockerfile.native" />
     <MESSAGE value="README.md 2" />
     <MESSAGE value="README.md" />
-    <MESSAGE value="first commit" />
     <MESSAGE value="application.properties 01" />
-    <option name="LAST_COMMIT_MESSAGE" value="application.properties 01" />
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
 </project>
