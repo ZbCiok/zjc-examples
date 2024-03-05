@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="" />
+    <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/data/create-dynamo-table-temperature.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/data/dynamo-create.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/payload.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/src/main/java/com/adesso/temperature/report/boundary/InputObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/src/main/java/com/adesso/temperature/report/boundary/OutputObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/src/main/java/com/adesso/temperature/report/boundary/TemperatureReportsLambda.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/src/main/java/com/adesso/temperature/report/control/TemperatureReportStore.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/src/main/java/com/adesso/temperature/report/entity/OfficeReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/src/main/java/com/adesso/temperature/report/entity/TemperatureReportItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/src/test/java/com/adesso/temperature/report/boundary/BaseDynamoDBTestSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/src/test/java/com/adesso/temperature/report/boundary/TemperatureReportsLambdaIT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/src/test/resources/com/adesso/temperature/report/boundary/cityItemAntalya.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +51,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/quarkus/reactive-messaging",
+    "last_opened_file_path": "/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/quarkus/aws",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -168,14 +187,10 @@
       <workItem from="1708869674316" duration="920000" />
       <workItem from="1708968764834" duration="63000" />
       <workItem from="1709054563114" duration="761000" />
-    </task>
-    <task id="LOCAL-00048" summary="first commit">
-      <option name="closed" value="true" />
-      <created>1702135921357</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1702135921357</updated>
+      <workItem from="1709124266169" duration="780000" />
+      <workItem from="1709132432435" duration="654000" />
+      <workItem from="1709227759724" duration="44000" />
+      <workItem from="1709639913738" duration="362000" />
     </task>
     <task id="LOCAL-00049" summary="first commit">
       <option name="closed" value="true" />
@@ -561,7 +576,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709054709861</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1709124431788</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1709124431789</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

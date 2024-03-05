@@ -1,0 +1,1 @@
+# Office Temperature Report via AWS Lambda using Quarkus
