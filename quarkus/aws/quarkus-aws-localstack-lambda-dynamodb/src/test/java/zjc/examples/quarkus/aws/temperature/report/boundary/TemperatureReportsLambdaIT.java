@@ -1,4 +1,4 @@
-package com.adesso.temperature.report.boundary;
+package zjc.examples.quarkus.aws.temperature.report.boundary;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.equalToObject;
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
-import com.adesso.temperature.report.entity.OfficeReport;
+import zjc.examples.quarkus.aws.temperature.report.entity.OfficeReport;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
@@ -41,7 +41,7 @@ class TemperatureReportsLambdaIT extends BaseDynamoDBTestSupport {
         // you test your lambdas by invoking on http://localhost:8081
         // this works in dev mode too
 
-        final OfficeReport officeReport = saveOfficeReportItem("officeItemAntalya.json");
+        final OfficeReport officeReport = saveOfficeReportItem("officeItemMarketing.json");
 
         InputObject in = new InputObject();
         in.setOfficeId(officeReport.getId());

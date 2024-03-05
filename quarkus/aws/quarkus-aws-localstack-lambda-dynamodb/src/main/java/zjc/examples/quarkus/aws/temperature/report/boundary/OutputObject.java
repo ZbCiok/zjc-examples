@@ -1,6 +1,6 @@
-package com.adesso.temperature.report.boundary;
+package zjc.examples.quarkus.aws.temperature.report.boundary;
 
-import com.adesso.temperature.report.entity.OfficeReport;
+import zjc.examples.quarkus.aws.temperature.report.entity.OfficeReport;
 
 public class OutputObject {
 

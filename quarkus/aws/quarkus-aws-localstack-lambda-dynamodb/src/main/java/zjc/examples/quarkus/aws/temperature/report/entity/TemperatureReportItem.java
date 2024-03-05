@@ -1,4 +1,4 @@
-package com.adesso.temperature.report.entity;
+package zjc.examples.quarkus.aws.temperature.report.entity;
 
 import java.time.Instant;
 

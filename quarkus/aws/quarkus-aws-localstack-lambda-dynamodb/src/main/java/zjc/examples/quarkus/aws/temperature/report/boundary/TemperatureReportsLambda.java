@@ -1,6 +1,6 @@
-package com.adesso.temperature.report.boundary;
+package zjc.examples.quarkus.aws.temperature.report.boundary;
 
-import com.adesso.temperature.report.control.TemperatureReportStore;
+import zjc.examples.quarkus.aws.temperature.report.control.TemperatureReportStore;
 import com.amazonaws.services.lambda.runtime.Context;
 import com.amazonaws.services.lambda.runtime.RequestHandler;
 import jakarta.inject.Inject;

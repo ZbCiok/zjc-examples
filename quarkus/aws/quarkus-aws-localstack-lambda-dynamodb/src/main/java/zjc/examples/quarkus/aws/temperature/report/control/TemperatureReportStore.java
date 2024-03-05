@@ -1,8 +1,8 @@
-package com.adesso.temperature.report.control;
+package zjc.examples.quarkus.aws.temperature.report.control;
 
-import com.adesso.temperature.report.boundary.InputObject;
-import com.adesso.temperature.report.boundary.OutputObject;
-import com.adesso.temperature.report.entity.OfficeReport;
+import zjc.examples.quarkus.aws.temperature.report.boundary.InputObject;
+import zjc.examples.quarkus.aws.temperature.report.boundary.OutputObject;
+import zjc.examples.quarkus.aws.temperature.report.entity.OfficeReport;
 import jakarta.annotation.PostConstruct;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;

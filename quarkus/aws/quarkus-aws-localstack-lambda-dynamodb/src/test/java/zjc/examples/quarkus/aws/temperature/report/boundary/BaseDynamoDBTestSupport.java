@@ -1,4 +1,4 @@
-package com.adesso.temperature.report.boundary;
+package zjc.examples.quarkus.aws.temperature.report.boundary;
 
 import jakarta.inject.Inject;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
