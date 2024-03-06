@@ -3,4 +3,4 @@
 
 ***
 
-#### Description: http://jreact.com/index.php/2024/03/05/quarkus-aws-localstack-lambda-dynamodb/
+#### Description: https://jreact.com/index.php/2024/03/05/quarkus-aws-localstack-lambda-dynamodb/
