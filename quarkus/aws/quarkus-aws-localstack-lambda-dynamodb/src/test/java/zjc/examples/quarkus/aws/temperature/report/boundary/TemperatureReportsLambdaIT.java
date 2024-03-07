@@ -38,8 +38,6 @@ class TemperatureReportsLambdaIT extends BaseDynamoDBTestSupport {
 
     @Test
     void testOfficeReportRetrieved() throws Exception {
-        // you test your lambdas by invoking on http://localhost:8081
-        // this works in dev mode too
 
         final OfficeReport officeReport = saveOfficeReportItem("officeItemMarketing.json");
 
@@ -76,5 +74,4 @@ class TemperatureReportsLambdaIT extends BaseDynamoDBTestSupport {
             return IOUtils.toString(fis, StandardCharsets.UTF_8);
         }
     }
-
 }
