@@ -1,5 +1,5 @@
 
-# aws-sdk-for-java-v2-example-1
+# aws-sdk-java-v2-dynamodb-s3-1
 
 
 | Environment      | [LocalStack](https://localstack.cloud/)   |
@@ -10,7 +10,7 @@
 
 ## Description
 
-This example is using the Java AWS SDK v2. ([AWS guide](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html))
+This example is using the Java AWS SDK v2 ([AWS guide](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html)). It describes an example use of S3 and DynamoDB.
 
 ## Prerequisites
 

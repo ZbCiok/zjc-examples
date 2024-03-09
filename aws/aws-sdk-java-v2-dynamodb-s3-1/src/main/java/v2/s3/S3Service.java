@@ -38,9 +38,8 @@ public class S3Service {
   public static void main(String[] args) {
 
     // local file to upload
-    // String filePath = "/home/zbyszek/IdeaProjects/reactive/aws-localstack/tmp-localstack-aws-sdk-examples /aws-sdk-for-java-v2-example-1/src/main/resources/hello-v2.txt";
-    String filePath = "/home/zbyszek/IdeaProjects/reactive/aws-localstack/tmp-localstack-aws-sdk-examples /aws-sdk-for-java-v2-example-1/src/main/resources/hello-v2-2.txt";
-    String objectKey = "hello-v2-2.txt";
+    String filePath = "/{... enter your path ...}/aws-sdk-java-v2-dynamodb-s3-1/src/main/resources/hello-v2-1.txt";
+    String objectKey = "hello-v2-1.txt";
 
     addObjectToS3Bucket(objectKey, filePath);
 

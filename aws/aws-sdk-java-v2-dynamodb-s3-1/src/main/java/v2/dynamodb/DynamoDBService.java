@@ -33,7 +33,7 @@ public class DynamoDBService {
       .build();
 
   public static void main(String[] args) throws ParseException {
-    String personId = "000012356-3";
+    String personId = "000012356-1";
 
     addEntryToDynamoDB(personId);
 
@@ -72,7 +72,7 @@ public class DynamoDBService {
       // create the Person object
       Person person = new Person();
       person.setId(personID);
-      person.setName("John Doe 3");
+      person.setName("John Doe 1");
       person.setBirthdateFromString("1980-01-01");
 
       // use the enhanced client to interact with the table
