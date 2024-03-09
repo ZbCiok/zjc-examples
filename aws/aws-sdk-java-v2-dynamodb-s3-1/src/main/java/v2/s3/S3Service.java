@@ -19,13 +19,15 @@ import software.amazon.awssdk.services.s3.model.S3Exception;
 
 public class S3Service {
 
-  // credentials that can be replaced with real AWS values
+  // credentials that can be replaced with real AWS values (LocalStack)
   private static final String ACCESS_KEY = "test";
   private static final String SECRET_KEY = "test";
 
+  // Use your region
   private static Region region = Region.US_EAST_1;
 
   private static final String BUCKET_NAME = "records";
+
   // create an S3 client
   private static S3Client s3Client = S3Client.builder()
       .endpointOverride(URI.create("https://s3.localhost.localstack.cloud:4566"))
