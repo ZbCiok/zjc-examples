@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2c8413cd-5085-46f2-a941-9f28d8cf6632" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/src/test/java/zjc/examples/quarkus/aws/temperature/report/boundary/TemperatureReportsLambdaIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb/src/test/java/zjc/examples/quarkus/aws/temperature/report/boundary/TemperatureReportsLambdaIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aws/aws-sdk-for-java-v2-example-1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aws/aws-sdk-for-java-v2-example-1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aws/aws-sdk-for-java-v2-example-1/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aws/aws-sdk-for-java-v2-example-1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aws/aws-sdk-for-java-v2-example-1/doc.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +39,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/quarkus/aws/quarkus-aws-localstack-lambda-dynamodb&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/zbyszek/IdeaProjects/reactive/github/zjc-examples/aws/aws-sdk-java-v2-dynamodb-s3-1&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -50,11 +54,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/aws" />
       <recent name="$PROJECT_DIR$/quarkus/aws" />
       <recent name="$PROJECT_DIR$/quarkus/reactive-messaging" />
       <recent name="$PROJECT_DIR$/quarkus/dynamodb" />
       <recent name="$PROJECT_DIR$/quarkus/mongodb" />
-      <recent name="$PROJECT_DIR$/quarkus/kafka" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/vertx/verticle/vertx-verticle-example01/src/main/java/zjc/examples/vertx.verticle" />
@@ -182,22 +186,14 @@
       <workItem from="1709716976196" duration="645000" />
       <workItem from="1709718151298" duration="619000" />
       <workItem from="1709722910441" duration="618000" />
-    </task>
-    <task id="LOCAL-00050" summary="first commit">
-      <option name="closed" value="true" />
-      <created>1702224407788</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1702224407788</updated>
-    </task>
-    <task id="LOCAL-00051" summary="corrections 01">
-      <option name="closed" value="true" />
-      <created>1702225035502</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1702225035502</updated>
+      <workItem from="1709815725347" duration="225000" />
+      <workItem from="1709822276717" duration="626000" />
+      <workItem from="1709829008374" duration="764000" />
+      <workItem from="1709832022403" duration="713000" />
+      <workItem from="1709888268528" duration="3768000" />
+      <workItem from="1709976108403" duration="1454000" />
+      <workItem from="1710010852492" duration="18000" />
+      <workItem from="1710010884725" duration="6000" />
     </task>
     <task id="LOCAL-00052" summary="corrections 02">
       <option name="closed" value="true" />
@@ -575,14 +571,29 @@
       <option name="project" value="LOCAL" />
       <updated>1709640321611</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="application.properties">
+      <option name="closed" value="true" />
+      <created>1709815903133</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1709815903134</updated>
+    </task>
+    <task id="LOCAL-00100" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1709916568072</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1709916568072</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="verticle 02" />
     <MESSAGE value="verticle 03" />
     <MESSAGE value="verticle-example02" />
     <MESSAGE value="verticle-example02 02" />
@@ -606,6 +617,7 @@
     <MESSAGE value="README.md 2" />
     <MESSAGE value="README.md" />
     <MESSAGE value="application.properties 01" />
+    <MESSAGE value="application.properties" />
     <MESSAGE value="first commit" />
     <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>

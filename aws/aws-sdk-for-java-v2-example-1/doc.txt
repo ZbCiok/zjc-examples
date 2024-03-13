@@ -1,5 +1,0 @@
-#AWS SDK for Java 2.x
-https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/home.html
-
-mvn clean package
-mvn exec:java -Dexec.mainClass="v2.dynamodb.DynamoDBService"
