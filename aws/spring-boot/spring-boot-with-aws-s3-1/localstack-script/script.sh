@@ -1,4 +1,3 @@
 #!/bin/bash
 awslocal s3api create-bucket \
---bucket mybucket \
---create-bucket-configuration LocationConstraint=eu-central-1
+--bucket mybucket

@@ -11,6 +11,4 @@ spring:
       region:
         static: us-east-1
 
-#        profile:
-#          name: ltest
 

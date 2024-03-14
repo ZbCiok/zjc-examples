@@ -35,7 +35,7 @@ class SpringBootWithS3ApplicationTests {
     @Container
     private static LocalStackContainer localStackContainer = new LocalStackContainer(DockerImageName.parse("localstack/localstack"))
             // to create secrets on startup
-            .withCopyFileToContainer(MountableFile.forClasspathResource("script.sh", 0775),
+            .withCopyFileToContainer(MountableFile.forClasspathResource("script.sh.DELETE", 0775),
                     "/etc/localstack/init/ready.d/")
             .withServices(LocalStackContainer.Service.S3);
 
