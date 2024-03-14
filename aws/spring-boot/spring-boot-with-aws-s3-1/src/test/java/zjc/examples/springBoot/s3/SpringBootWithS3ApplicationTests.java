@@ -1,4 +1,4 @@
-package com.amrut.prabhu;
+package zjc.examples.springBoot.s3;
 
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeAll;
@@ -35,18 +35,19 @@ class SpringBootWithS3ApplicationTests {
     @Container
     private static LocalStackContainer localStackContainer = new LocalStackContainer(DockerImageName.parse("localstack/localstack"))
             // to create secrets on startup
-            .withCopyFileToContainer(MountableFile.forClasspathResource("script.sh.DELETE", 0775),
+            .withCopyFileToContainer(MountableFile.forClasspathResource("script.sh", 0775),
                     "/etc/localstack/init/ready.d/")
             .withServices(LocalStackContainer.Service.S3);
 
     @BeforeAll
     static void beforeAll() throws IOException, InterruptedException {
         System.setProperty("spring.cloud.aws.s3.endpoint", "http://s3.localhost.localstack.cloud:" + localStackContainer.getMappedPort(4566));
-        System.setProperty("spring.cloud.aws.s3.region", "eu-central-1");
+        System.setProperty("spring.cloud.aws.s3.region", "us-east-1");
         System.setProperty("spring.cloud.aws.credentials.access-key", "none");
         System.setProperty("spring.cloud.aws.credentials.secret-key", "none");
+
         // needed to set this, for the GitHub pipeline to succeed.
-        System.setProperty("spring.cloud.aws.region.static", "eu-central-1");
+        System.setProperty("spring.cloud.aws.region.static", "us-east-1");
 
     }
 
@@ -55,7 +56,7 @@ class SpringBootWithS3ApplicationTests {
 
         String data = """
                         {
-                        "name" : "amrut"
+                        "name" : "zjc"
                         }
                         """;
 
@@ -64,11 +65,11 @@ class SpringBootWithS3ApplicationTests {
         mockMvc.perform(MockMvcRequestBuilders.post("/data")
                 .content(data))
                 .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.jsonPath("$.name", Matchers.is("amrut")));
+                .andExpect(MockMvcResultMatchers.jsonPath("$.name", Matchers.is("zjc")));
 
         mockMvc.perform(MockMvcRequestBuilders.get("/data"))
                 .andExpect(MockMvcResultMatchers.status().isOk())
-                .andExpect(MockMvcResultMatchers.jsonPath("$.name", Matchers.is("amrut")));
+                .andExpect(MockMvcResultMatchers.jsonPath("$.name", Matchers.is("zjc")));
 
         assertThat(s3SampleFile.exists()).isTrue();
     }

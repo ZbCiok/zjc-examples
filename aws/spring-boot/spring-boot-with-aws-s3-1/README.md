@@ -3,7 +3,7 @@
 
 | Environment      | [LocalStack](https://localstack.cloud/) |
 |------------------|-----------------------------------------|
-| __Services__     | Local Stack Amazon S3                   |
+| __Services__     | LocalStack, Amazon S3                   |
 | __Categories__   | Spring Boot, JAVA AWS SDK               |
 
 

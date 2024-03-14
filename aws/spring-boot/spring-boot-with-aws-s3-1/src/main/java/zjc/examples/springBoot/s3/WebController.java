@@ -1,4 +1,4 @@
-package com.amrut.prabhu;
+package zjc.examples.springBoot.s3;
 
 
 import io.awspring.cloud.s3.S3Resource;
