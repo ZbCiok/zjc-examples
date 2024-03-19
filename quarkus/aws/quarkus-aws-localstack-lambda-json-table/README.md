@@ -1,0 +1,1 @@
+## quarkus-aws-localstack-lambda-json-table
