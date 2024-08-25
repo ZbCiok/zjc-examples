@@ -1,0 +1,4 @@
+
+DROP TABLE IF EXISTS product;
+CREATE TABLE IF NOT EXISTS product (id SERIAL PRIMARY KEY, description VARCHAR(255), price int);
+

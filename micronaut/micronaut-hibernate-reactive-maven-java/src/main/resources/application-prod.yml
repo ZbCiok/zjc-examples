@@ -1,0 +1,30 @@
+micronaut:
+  application:
+    name: reactivehibernate
+---
+netty:
+  default:
+    allocator:
+      max-order: 3
+---
+#tag::application[]
+application:
+  max: 50
+#end::application[]
+---
+#tag::jpa[]
+jpa:
+  default:
+    reactive: true
+    properties:
+      hibernate:
+        connection:
+          db-type: mysql
+          url: jdbc:mysql://localhost:3306/micronaut
+          username: ${USERNAME}
+          password: ${PASSWORD}
+        hbm2ddl:
+          auto: update
+#          auto: create-drop
+        show_sql: true
+#end::jpa[]

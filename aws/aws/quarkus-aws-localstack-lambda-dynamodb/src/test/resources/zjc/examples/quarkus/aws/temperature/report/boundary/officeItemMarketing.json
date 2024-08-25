@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "name": "Marketing",
+  "country": "Argentina",
+  "weeklyReports" : [
+    {
+      "time": "2024-01-03T10:15:30.00Z",
+      "temperature": 11.5,
+      "description": "Sunny Day"
+    }
+  ]
+}
