@@ -3,6 +3,12 @@ build
 /target
 target
 
+# IntelliJ
+.idea
+*.ipr
+*.iml
+*.iws
+
 # Compiled class file
 *.class
 
