@@ -1,4 +1,4 @@
-package com.github.kothapet.scs.model;
+package com.jreact.scs.supplier.model;
 
 public class IntegerEntity {
 	

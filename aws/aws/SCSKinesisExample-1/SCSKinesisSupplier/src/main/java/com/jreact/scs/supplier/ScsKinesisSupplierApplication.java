@@ -1,13 +1,13 @@
-package com.github.kothapet.scs;
+package com.jreact.scs.supplier;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ScsKinesisProj1Application {
+public class ScsKinesisSupplierApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ScsKinesisProj1Application.class, args);
+		SpringApplication.run(ScsKinesisSupplierApplication.class, args);
 	}
 
 }

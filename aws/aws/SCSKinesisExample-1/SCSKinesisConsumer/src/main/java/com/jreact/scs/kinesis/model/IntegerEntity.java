@@ -1,4 +1,4 @@
-package com.github.kothapet.scs.model;
+package com.jreact.scs.kinesis.model;
 
 public class IntegerEntity {
 	
