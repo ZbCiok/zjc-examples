@@ -1,4 +1,4 @@
-# Amazon AWS SDK S3 Example 
+## Amazon AWS SDK S3 Example 
 
 Spring Boot project that interacts with Amazon S3 buckets over the official Java Amazon AWS SDK.
 (Optional is possible to interact with a local AWS setup using LocalStack (pay attention to the used Docker image!).
@@ -26,7 +26,7 @@ After you can interact with the application using Swagger UI http://localhost:80
 
 This project is based on the Medium article https://mmarcosab.medium.com/how-about-s3-bucket-and-localstack-b0816bab452a and relating GitHub project https://github.com/mmarcosab/s3-example.
 
-## S3 bucket
+## S3 Bucket LocalStack Commands
 Create S3 bucket:
 ```
 awslocal s3api create-bucket --bucket bucket-example
@@ -52,5 +52,7 @@ Upload object:
 awslocal --endpoint-url=http://localhost:4566 s3 cp ./tmp-data/example-1.png s3://bucket-example
 awslocal --endpoint-url=http://localhost:4566 s3 cp ./tmp-data/example-2.png s3://bucket-example
 ```
-http://localhost:8080/buckets
+
+
+http://localhost:8080/buckets<br />
 http://localhost:8080/buckets/bucket-example/objects

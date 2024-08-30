@@ -38,8 +38,8 @@ public class AWSS3Config {
                 env.getProperty("aws.secretKey", ""))
         );
 
-        logger.info(">>>>>>>>> accessKey " + credentials.resolveCredentials().accessKeyId());
-        logger.info(">>>>>>>>> secretKey " + credentials.resolveCredentials().secretAccessKey());
+        logger.info("accessKey " + credentials.resolveCredentials().accessKeyId());
+        logger.info("secretKey " + credentials.resolveCredentials().secretAccessKey());
 
         return credentials;
     }
