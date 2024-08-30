@@ -3,8 +3,9 @@ package com.s3example.demo.adapters.service;
 import com.s3example.demo.adapters.representation.S3BucketObjectRepresentation;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import software.amazon.awssdk.core.ResponseInputStream;
 import software.amazon.awssdk.core.sync.RequestBody;
@@ -21,10 +22,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Slf4j
 @Service
 @RequiredArgsConstructor
 public class S3Service {
+    Logger logger = LoggerFactory.getLogger(S3Service.class);
 
     private final S3Client s3Client;
 
@@ -35,9 +36,9 @@ public class S3Service {
 
         try {
             s3Client.createBucket(createBucketRequest);
-            log.info("Bucket created: {}", createBucketRequest.bucket());
+            logger.info("Bucket created: {}", createBucketRequest.bucket());
         } catch (S3Exception e) {
-            log.error("Error creating bucket: {}", e.awsErrorDetails().errorMessage());
+            logger.error("Error creating bucket: {}", e.awsErrorDetails().errorMessage());
         }
     }
 
@@ -52,9 +53,9 @@ public class S3Service {
 
         try {
             s3Client.deleteBucket(deleteBucketRequest);
-            log.info("Bucket deleted: {}", deleteBucketRequest.bucket());
+            logger.info("Bucket deleted: {}", deleteBucketRequest.bucket());
         } catch (S3Exception e) {
-            log.error("Error deleting bucket: {}", e.awsErrorDetails().errorMessage());
+            logger.error("Error deleting bucket: {}", e.awsErrorDetails().errorMessage());
         }
     }
 
@@ -70,11 +71,11 @@ public class S3Service {
                     Paths.get(".", s3BucketObjectRepresentation.getObjectName()),
                     s3BucketObjectRepresentation.getText().getBytes());
             s3Client.putObject(putObjectRequest, RequestBody.fromFile(file));
-            log.info("Object created: {}", putObjectRequest.key());
+            logger.info("Object created: {}", putObjectRequest.key());
         } catch (S3Exception e) {
-            log.error("Error uploading object: {}", e.awsErrorDetails().errorMessage());
+            logger.error("Error uploading object: {}", e.awsErrorDetails().errorMessage());
         } catch (Exception e) {
-            log.error(e.getMessage());
+            logger.error(e.getMessage());
         }
     }
 
@@ -88,7 +89,7 @@ public class S3Service {
             ListObjectsResponse objectListing = s3Client.listObjects(listObjects);
             return objectListing.contents();
         } catch (S3Exception e) {
-            log.error(e.awsErrorDetails().errorMessage());
+            logger.error(e.awsErrorDetails().errorMessage());
         }
 
         return Collections.emptyList();
@@ -104,9 +105,9 @@ public class S3Service {
             ResponseInputStream<GetObjectResponse> responseInputStream = s3Client.getObject(getObjectRequest);
             FileUtils.copyInputStreamToFile(responseInputStream, new File("." + File.separator + objectName));
         } catch (S3Exception e) {
-            log.error(e.awsErrorDetails().errorMessage());
+            logger.error(e.awsErrorDetails().errorMessage());
         } catch (IOException e) {
-            log.error(e.getMessage());
+            logger.error(e.getMessage());
         }
     }
 
@@ -118,9 +119,9 @@ public class S3Service {
 
         try {
             s3Client.deleteObject(deleteObjectRequest);
-            log.info("Object deleted: {}", deleteObjectRequest.key());
+            logger.info("Object deleted: {}", deleteObjectRequest.key());
         } catch (S3Exception e) {
-            log.error("Error deleting object: {}", e.awsErrorDetails().errorMessage());
+            logger.error("Error deleting object: {}", e.awsErrorDetails().errorMessage());
         }
     }
 
@@ -146,11 +147,11 @@ public class S3Service {
 
         try {
             s3Client.deleteObjects(deleteObjectsRequest);
-            log.info("Objects deleted: {}", objectIdentifiers.stream()
+            logger.info("Objects deleted: {}", objectIdentifiers.stream()
                     .map(ObjectIdentifier::key)
                     .collect(Collectors.joining()));
         } catch (S3Exception e) {
-            log.error("Error deleting objects: {}", e.awsErrorDetails().errorMessage());
+            logger.error("Error deleting objects: {}", e.awsErrorDetails().errorMessage());
         }
     }
 
@@ -167,10 +168,10 @@ public class S3Service {
             // If copy is successful, delete the source object.
             if (copyObjectResponse != null) {
                 deleteObject(sourceBucketName, objectName);
-                log.info("Object moved and deleted: {}", copyObjectRequest.sourceKey());
+                logger.info("Object moved and deleted: {}", copyObjectRequest.sourceKey());
             }
         } catch (S3Exception e) {
-            log.error(e.awsErrorDetails().errorMessage());
+            logger.error(e.awsErrorDetails().errorMessage());
         }
     }
 }
