@@ -1,7 +1,7 @@
 
 ## ddb-write-read-example-01
-### ___with Java AWS SDK v2___
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+### ___with Java AWS SDK v2___ 
+
 ## Description
 
 This example's purpose is to support the LocalStack on using the platform with Java applications.
