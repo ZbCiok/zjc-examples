@@ -7,13 +7,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/v1/countries")
+@RequestMapping("/api/v1/music")
 @RequiredArgsConstructor
-public class CountryController {
-    private final CountryService service;
+public class MusicController {
+    private final MusicService service;
 
     @GetMapping
-    public List<CountryEntity> getAll() {
+    public List<MusicEntity> getAll() {
         return service.getAll();
     }
 }

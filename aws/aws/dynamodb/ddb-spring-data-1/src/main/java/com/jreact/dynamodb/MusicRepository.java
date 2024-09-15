@@ -8,10 +8,10 @@ import software.amazon.awssdk.enhanced.dynamodb.DynamoDbTable;
 
 @Component
 @RequiredArgsConstructor
-public class CountryRepository {
-    private final DynamoDbTable<CountryEntity> table;
+public class MusicRepository {
+    private final DynamoDbTable<MusicEntity> table;
 
-    public List<CountryEntity> getAll() {
+    public List<MusicEntity> getAll() {
         return table.scan().items().stream().toList();
     }
 }

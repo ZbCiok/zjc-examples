@@ -7,11 +7,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class CountryService {
+public class MusicService {
 
-    private final com.jreact.dynamodb.CountryRepository repository;
+    private final MusicRepository repository;
 
-    public List<com.jreact.dynamodb.CountryEntity> getAll() {
+    public List<MusicEntity> getAll() {
         return repository.getAll();
     }
 }

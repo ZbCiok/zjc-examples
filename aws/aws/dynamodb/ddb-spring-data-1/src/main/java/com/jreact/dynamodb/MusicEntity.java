@@ -6,14 +6,14 @@ import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbParti
 
 @DynamoDbBean
 @Data
-public class CountryEntity {
-    public static final String TABLE_NAME = "Country";
+public class MusicEntity {
+    public static final String TABLE_NAME = "Music";
 
-    private String countryCode;
-    private String countryDisplayName;
+    private String musicCode;
+    private String musicDisplayName;
 
     @DynamoDbPartitionKey
-    public String getCountryCode() {
-        return countryCode;
+    public String getMusicCode() {
+        return musicCode;
     }
 }

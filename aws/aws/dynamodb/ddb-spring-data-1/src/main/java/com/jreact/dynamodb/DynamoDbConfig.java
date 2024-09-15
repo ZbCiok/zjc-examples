@@ -49,7 +49,7 @@ public class DynamoDbConfig {
     }
 
     @Bean
-    public DynamoDbTable<com.jreact.dynamodb.CountryEntity> getCountryLocaleTable(DynamoDbEnhancedClient dbClient) {
-        return dbClient.table(com.jreact.dynamodb.CountryEntity.TABLE_NAME, TableSchema.fromBean(com.jreact.dynamodb.CountryEntity.class));
+    public DynamoDbTable<MusicEntity> getMusicLocaleTable(DynamoDbEnhancedClient dbClient) {
+        return dbClient.table(MusicEntity.TABLE_NAME, TableSchema.fromBean(MusicEntity.class));
     }
 }
