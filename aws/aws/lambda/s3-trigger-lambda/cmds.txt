@@ -1,0 +1,41 @@
+
+awslocal lambda create-function \
+    --function-name example-lambda \
+    --runtime java8 \
+    --handler example.BucketHandler \
+    --zip-file fileb://localstack-example-1.0-SNAPSHOT.jar \
+    --role arn:aws:iam::000000000000:role/lambda-role
+
+
+awslocal lambda list-functions
+awslocal lambda delete-function \
+    --function-name example-lambda
+
+create bucket:
+awslocal s3 mb s3://mybucket --endpoint-url http://localhost:4566
+awslocal s3api list-buckets
+
+registering events:
+awslocal s3api put-bucket-notification-configuration --bucket mybucket --notification-configuration file://s3-notify-config.json --endpoint-url http://localhost:4566
+
+triggering lambda:
+awslocal s3 cp sample-file-01.txt s3://mybucket/sample-file-01.txt --endpoint-url http://localhost:4566
+awslocal s3 cp sample-file-02.txt s3://mybucket/sample-file-02.txt --endpoint-url http://localhost:4566
+
+
+
+---------------------
+
+
+
+awslocal logs create-log-group --log-group-name /s3/lambda/my-lambda
+awslocal --endpoint-url=http://localhost:4566 logs tail '/s3/lambda/my-lambda' --follow
+
+
+
+
+
+
+
+
+
