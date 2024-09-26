@@ -7,14 +7,17 @@ import com.amazonaws.services.lambda.runtime.events.SNSEvent;
 
 import java.util.List;
 import com.amazonaws.services.lambda.runtime.events.SNSEvent.SNSRecord;
-import java.util.Iterator;
-import java.util.List;
+import lombok.extern.java.Log;
 
+import java.util.Iterator;
+
+@Log
 public class SnsRequestHandler implements RequestHandler<SNSEvent, Boolean> {
     LambdaLogger logger;
 
     @Override
     public Boolean handleRequest(SNSEvent event, Context context) {
+        log.info(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         logger = context.getLogger();
         List<SNSRecord> records = event.getRecords();
         if (!records.isEmpty()) {
@@ -36,31 +39,3 @@ public class SnsRequestHandler implements RequestHandler<SNSEvent, Boolean> {
     }
 }
 
-
-//public class SnsRequestHandler implements RequestHandler<SNSEvent, List<String>> {
-//
-//    @Override
-//    public List<String> handleRequest(SNSEvent event, Context context) {
-//        final LambdaLogger logger = context.getLogger();
-//        final List<String> messages = event.getRecords().stream()
-//                .map(SNSEvent.SNSRecord::getSNS)
-//                .map(SNSEvent.SNS::getMessage)
-//                .toList();
-//        messages.forEach(System.out::println);
-//        return messages;
-//    }
-//}
-
-
-//public class SnsRequestHandler {
-//
-//    public String handleSNSEvent(SNSEvent event, Context context) {
-////        LambdaLogger logger = context.getLogger();
-////        for (SNSEvent.SNSRecord record : event.getRecords()) {
-////            SNSEvent.SNS sns = record.getSNS();
-////            logger.log("handleSNSEvent received SNS message " + sns.getMessage());
-////        }
-//        return ">>>>>>>>>>>>>>>>>>>>> handleSNSEvent finished";
-//    }
-//
-//}

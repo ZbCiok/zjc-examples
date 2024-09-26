@@ -4,12 +4,14 @@ awslocal lambda create-function \
     --region us-east-1 \
     --function-name localstack-lambda-sns \
     --runtime java21 \
-    --zip-file fileb://localstack-lambda-sns-0.0.1.jar \
+    --zip-file fileb://sns-trigger-lambda-0.0.1.jar \
     --handler com.example.SnsRequestHandler \
     --role arn:aws:iam::000000000000:role/example-lambda-noop-role \
     --timeout 120
 
 awslocal lambda list-functions
+awslocal lambda delete-function \
+    --function-name localstack-lambda-sns
 
 
 Topic:
