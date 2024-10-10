@@ -22,7 +22,6 @@ import com.amazonaws.services.lambda.runtime.events.SNSEvent.SNSRecord;
 import lombok.extern.java.Log;
 import software.amazon.awssdk.services.dynamodb.model.DynamoDbException;
 
-//import javax.swing.plaf.synth.Region;
 import java.util.Iterator;
 
 @Log
@@ -31,7 +30,7 @@ public class SnsRequestHandler implements RequestHandler<SNSEvent, Boolean> {
     LambdaLogger logger;
     private SNSEvent event;
 
-    //-----
+    //----- DynamodDB
 
     private static final String ACCESS_KEY = "test";
     private static final String SECRET_KEY = "test";
@@ -88,14 +87,6 @@ public class SnsRequestHandler implements RequestHandler<SNSEvent, Boolean> {
             DynamoDbEnhancedClient enhancedClient = DynamoDbEnhancedClient.builder()
                     .dynamoDbClient(dynamoDbClient)
                     .build();
-
-            // create the person object
-//            PersonRequest person = new PersonRequest();
-//            person.setId(Integer.parseInt(personID));
-//            person.setFirstName("Doe");
-//            person.setLastName("John");
-//            person.setAge(Integer.parseInt("19790101"));
-//            person.setAddress("Address 01");
 
             // use the enhanced client to interact with the table
             DynamoDbTable<Person> table = enhancedClient.table(TABLE_NAME,
