@@ -1,0 +1,3 @@
+Alice; 23
+Bob; 657.9
+Alice; 55.1
