@@ -3,12 +3,10 @@ package com.jreact.flink;
 import org.apache.flink.table.api.EnvironmentSettings;
 import org.apache.flink.table.api.TableEnvironment;
 
-public class jdbcFlinkTable {
+public class PostgresFlinkTable {
 
     public static void main(String[] args) throws Exception {
 
-        //Definiuje wszystkie parametry, które inicjują środowisko tabeli.
-        //Te parametry są używane tylko podczas tworzenia inicjalizacji TableEnvironment i nie można ich później zmienić.
         EnvironmentSettings settings = EnvironmentSettings
                 .newInstance()
                 .inBatchMode()
@@ -16,7 +14,7 @@ public class jdbcFlinkTable {
         final TableEnvironment tEnv = TableEnvironment.create(settings);
 
         //Laczymy sie z PostgreSQL i pobieramy dane z tabeli 'clients' do tabeli Flink 'MyClients'
-        tEnv.executeSql("CREATE TABLE MyClients ("
+        tEnv.executeSql("CREATE TABLE DClients ("
                 + " id INT, "
                 + " name VARCHAR(255) "
                 + " ) WITH ( "
@@ -28,7 +26,7 @@ public class jdbcFlinkTable {
                 +  ")");
 
         //Testowy select
-        tEnv.sqlQuery("SELECT * FROM MyClients")
+        tEnv.sqlQuery("SELECT * FROM DClients")
                 .execute()
                 .print();
 

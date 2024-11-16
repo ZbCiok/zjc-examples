@@ -9,6 +9,7 @@ CREATE TABLE clients (
 );
 
 INSERT INTO clients (id, name) VALUES (1, 'Alice');
+INSERT INTO clients (id, name) VALUES (2, 'Bob');
 
 SELECT * FROM clients;
 
