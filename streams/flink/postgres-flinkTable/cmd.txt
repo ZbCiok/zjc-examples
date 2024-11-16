@@ -1,5 +1,6 @@
 docker compose -f docker-compose.yaml up
 
+docker exec -ti {container} psql -d {db} -U {user}
 docker exec -ti jdbc-flinktable-postgres-1 psql -d postgres -U root
 
 CREATE TABLE clients (
