@@ -1,0 +1,16 @@
+docker compose -f docker-compose.yaml up
+
+docker exec -ti jdbc-flinktable-postgres-1 psql -d postgres -U root
+
+CREATE TABLE clients (
+	id int4 NULL,
+	"name" varchar NULL
+);
+
+INSERT INTO clients (id, name) VALUES (1, 'Alice');
+
+SELECT * FROM clients;
+
+DROP TABLE clients;
+
+
