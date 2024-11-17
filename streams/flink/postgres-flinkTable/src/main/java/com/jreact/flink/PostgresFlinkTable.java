@@ -13,7 +13,6 @@ public class PostgresFlinkTable {
                 .build();
         final TableEnvironment tEnv = TableEnvironment.create(settings);
 
-        //Laczymy sie z PostgreSQL i pobieramy dane z tabeli 'clients' do tabeli Flink 'MyClients'
         tEnv.executeSql("CREATE TABLE DClients ("
                 + " id INT, "
                 + " name VARCHAR(255) "
@@ -25,7 +24,6 @@ public class PostgresFlinkTable {
                 + " 'password' = 'secret'"
                 +  ")");
 
-        //Testowy select
         tEnv.sqlQuery("SELECT * FROM DClients")
                 .execute()
                 .print();

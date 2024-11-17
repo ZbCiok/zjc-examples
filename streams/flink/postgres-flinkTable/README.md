@@ -1,1 +1,1 @@
-# Apache Flink: Read-Write Dynamic Table
+# Apache Flink: Postgres Flink Tabel
