@@ -1,1 +1,1 @@
-# Apache Flink: Postgres Flink Tabel
+# Apache Flink: Postgres Flink Table
