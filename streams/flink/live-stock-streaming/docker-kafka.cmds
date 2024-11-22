@@ -1,0 +1,51 @@
+docker pull apache/kafka:3.9.0
+docker run -p 9092:9092 apache/kafka:3.9.0
+
+docker ps
+docker exec -it fervent_dijkstra /bin/bash
+
+cd /opt/kafka
+
+create topic:
+-------------
+bin/kafka-topics.sh --create --topic price --bootstrap-server localhost:9092
+bin/kafka-topics.sh --create --topic stock --bootstrap-server localhost:9092
+bin/kafka-topics.sh --create --topic stock_update --bootstrap-server localhost:9092
+
+producer/consumer:
+------------------
+bin/kafka-console-producer.sh --topic price --bootstrap-server localhost:9092
+bin/kafka-console-consumer.sh --topic price --from-beginning --bootstrap-server localhost:9092
+
+bin/kafka-console-producer.sh --topic stock --bootstrap-server localhost:9092
+bin/kafka-console-consumer.sh --topic stock --from-beginning --bootstrap-server localhost:9092
+
+bin/kafka-console-producer.sh --topic stock_update --bootstrap-server localhost:9092
+bin/kafka-console-consumer.sh --topic stock_update --from-beginning --bootstrap-server localhost:9092
+
+view message:
+-------------
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic stock --from-beginning
+bin/kafka-console-consumer.sh --topic price --from-beginning --bootstrap-server localhost:9092
+bin/kafka-console-consumer.sh --topic stock_update --from-beginning --bootstrap-server localhost:9092
+
+
+
+list topics:
+------------
+bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+
+delete topic:
+-------------
+bin/kafka-topics.sh --delete --bootstrap-server localhost:9092 --topic price
+bin/kafka-topics.sh --delete --bootstrap-server localhost:9092 --topic stock
+bin/kafka-topics.sh --delete --bootstrap-server localhost:9092 --topic stock_update
+
+DATA:
+------
+stock: { "symbol": "GOOG", "company_name": "Alphabet Inc (Google)" }
+
+price { "symbol": "GOOG", "timestamp": "1712443970", "price": 156.5 }
+
+stock_update  { "symbol": "GOOG", "company_name": "Alphabet Inc (Google)", "timestamp": "1712443970", "price": 156.5 }
+
