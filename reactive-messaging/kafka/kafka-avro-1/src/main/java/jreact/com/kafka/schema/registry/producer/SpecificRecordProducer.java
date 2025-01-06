@@ -34,6 +34,10 @@ public class SpecificRecordProducer {
         simpleMessage.setContent("Hello world");
         simpleMessage.setDateTime(Instant.now().toString());
 
+        // creates avro-topic if it doesn't exist
+        // public ProducerRecord(String topic, Integer partition, Long timestamp, K key, V value, Iterable<Header> headers) {
+        //    ...
+        // }
         ProducerRecord<String, SpecificRecord> record = new ProducerRecord<>("avro-topic", null, simpleMessage);
 
         producer.send(record);
