@@ -1,4 +1,4 @@
-package jreact.com.kafka.schema.registry.producer;
+package com.jreact.kafka.schema.registry.producer;
 
 import io.confluent.kafka.serializers.KafkaAvroSerializer;
 import io.confluent.kafka.serializers.KafkaAvroSerializerConfig;
@@ -36,7 +36,7 @@ public class GenericRecordProducer {
                 "{" +
                 "   \"type\": \"record\"," +
                 "   \"name\": \"SimpleMessage\"," +
-                "   \"namespace\": \"jreact.com.kafka.schema.registry.avro\"," +
+                "   \"namespace\": \"com.jreact.kafka.schema.registry.avro\"," +
                 "   \"fields\": [" +
                 "       {\"name\": \"content\", \"type\": \"string\", \"doc\": \"Message content\"}," +
                 "       {\"name\": \"date_time\", \"type\": \"string\", \"doc\": \"Datetime when the message\"}" +

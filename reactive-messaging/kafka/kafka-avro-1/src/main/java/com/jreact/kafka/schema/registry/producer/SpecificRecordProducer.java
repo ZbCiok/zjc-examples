@@ -1,6 +1,6 @@
-package jreact.com.kafka.schema.registry.producer;
+package com.jreact.kafka.schema.registry.producer;
 
-import jreact.com.kafka.schema.registry.avro.SimpleMessage;
+import com.jreact.kafka.schema.registry.avro.SimpleMessage;
 import io.confluent.kafka.serializers.KafkaAvroSerializer;
 import io.confluent.kafka.serializers.KafkaAvroSerializerConfig;
 import org.apache.avro.specific.SpecificRecord;
