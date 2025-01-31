@@ -1,0 +1,3 @@
+# RabbitMQ Direct Exchange
+
+
