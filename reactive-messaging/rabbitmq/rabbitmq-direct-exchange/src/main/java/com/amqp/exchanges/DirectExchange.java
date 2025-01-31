@@ -10,7 +10,7 @@ import java.util.concurrent.TimeoutException;
  */
 public class DirectExchange {
 
-  //Step-1: Declare the exchange
+  //Declare the exchange
   public static void declareExchange() throws IOException, TimeoutException {
     Channel channel = ConnectionManager.getConnection().createChannel();
     //Declare my-direct-exchange DIRECT exchange
@@ -18,7 +18,7 @@ public class DirectExchange {
     channel.close();
   }
 
-  //Step-2: Declare the Queues
+  //Declare the Queues
   public static void declareQueues() throws IOException, TimeoutException {
     //Create a channel - do not share the Channel instance
     Channel channel = ConnectionManager.getConnection().createChannel();
@@ -31,7 +31,7 @@ public class DirectExchange {
     channel.close();
   }
 
-  //Step-3: Create the Bindings
+  //Create the Bindings
   public static void declareBindings() throws IOException, TimeoutException {
     Channel channel = ConnectionManager.getConnection().createChannel();
     //Create bindings - (queue, exchange, routingKey)
@@ -41,7 +41,7 @@ public class DirectExchange {
     channel.close();
   }
 
-  //Step-4: Create the Subscribers
+  //Create the Subscribers
   public static void subscribeMessage() throws IOException {
     Channel channel = ConnectionManager.getConnection().createChannel();
     channel.basicConsume("LightQ", true, ((consumerTag, message) -> {
@@ -66,7 +66,7 @@ public class DirectExchange {
     });
   }
 
-  //Step-5: Publish the messages
+  //Publish the messages
   public static void publishMessage() throws IOException, TimeoutException {
     Channel channel = ConnectionManager.getConnection().createChannel();
     String message = "Direct message - Turn on the Home Appliances ";
