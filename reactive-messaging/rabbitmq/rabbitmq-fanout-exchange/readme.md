@@ -1,0 +1,3 @@
+# RabbitMQ Fanout Exchange
+
+
